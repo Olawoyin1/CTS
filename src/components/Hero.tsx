@@ -39,9 +39,9 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="text-2xl md:text-4xl font-medium text-slate-500 mb-12 leading-tight max-w-4xl mx-auto tracking-tight"
+                        className="text-2xl md:text-3xl font-medium text-slate-500 mb-12 leading-tight max-w-4xl mx-auto tracking-tight"
                     >
-                        Reimagining the Future: Calabar's transition into a <span className="text-brand-navy">Tech-Driven Economy</span>
+                        Reimagining the Future: Calabar's transition into a <span className="text-brand-navy block">Tech-Driven Economy</span>
                     </motion.p>
 
                     {/* Description */}
@@ -51,7 +51,7 @@ const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.4 }}
                         className="text-lg text-slate-600 max-w-2xl mx-auto mb-12 leading-relaxed"
                     >
-                        A Digital Awakening. Calabar Tech Summit 2026 is not just an event — it is a movement to unlock the potential of the Cross River State ecosystem.
+                        A Digital Awakening. Calabar Tech Summit 2026 is not just an event — It is a movement to transform Cross River State into a thriving tech-powered economy.
                     </motion.p>
 
                     {/* CTAs */}

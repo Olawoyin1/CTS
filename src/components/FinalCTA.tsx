@@ -17,12 +17,12 @@ const FinalCTA = () => {
                         ✨ Join the Movement
                     </div>
                     
-                    <h2 className="text-5xl md:text-7xl lg:text-8xl font-black mb-10 tracking-tighter leading-[0.9]">
+                    <h2 className="text-4xl md:text-6xl  font-black mb-10 tracking-tighter leading-[0.9]">
                         Let's Build the <br /> 
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-emerald-500">Future Together</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-blue-500">Future Together</span>
                     </h2>
                     
-                    <p className="text-2xl md:text-3xl text-slate-500 mb-16 leading-relaxed max-w-4xl mx-auto font-medium tracking-tight">
+                    <p className=" md:text-xl text-slate-500 mb-16 leading-relaxed max-w-4xl mx-auto font-medium tracking-tight">
                         Whether you're a student, founder, investor, or policymaker — your participation matters. Join us in reimagining what's possible for Calabar.
                     </p>
                     

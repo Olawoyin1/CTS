@@ -5,25 +5,25 @@ const Opportunities = () => {
         {
             emoji: '🎓',
             title: 'Digital Skills Scholarships',
-            desc: 'Free training programs in software development, design, data analytics, and digital marketing.',
+            desc: 'Top 100 participants will receive full scholarships for advanced digital skills training.',
             color: 'bg-orange-50 text-orange-600'
         },
         {
             emoji: '🤝',
             title: 'Mentorship & Internships',
-            desc: 'Direct connections with industry professionals and placement opportunities.',
+            desc: 'Post-summit mentorship & internship pathways connecting talent with employment.',
             color: 'bg-blue-50 text-blue-600'
         },
         {
-            emoji: '💡',
+            emoji: '🌱',
             title: 'Startup Incubation',
-            desc: 'Structured support for early-stage founders including funding access, workspace, and technical guidance.',
+            desc: 'Access to startup incubation pipelines for early-stage founders and innovators.',
             color: 'bg-yellow-50 text-yellow-600'
         },
         {
             emoji: '🏆',
             title: 'Tech Starter Competition',
-            desc: 'Pitch your idea for a chance to win seed funding, mentorship, and resources.',
+            desc: 'Pitch your idea for a chance to win seed funding and resources.',
             color: 'bg-purple-50 text-purple-600'
         },
     ];
@@ -39,8 +39,8 @@ const Opportunities = () => {
                             viewport={{ once: true }}
                             className="heading-lg mb-6 leading-tight"
                         >
-                            Beyond the Summit: <br />
-                            <span className="text-brand-blue">Real Opportunities</span>
+                            Scholarships & <br />
+                            <span className="text-brand-blue">Opportunities</span>
                         </motion.h2>
                         <motion.p 
                             initial={{ opacity: 0, x: -20 }}
@@ -49,7 +49,7 @@ const Opportunities = () => {
                             transition={{ delay: 0.1 }}
                             className="text-body-lg mb-8"
                         >
-                            We aren't just talking about the future; we're funding it. Access scholarships, internships, and seed capital.
+                            We aren't just talking about the future; we're funding it. Access scholarships, internships, and incubation.
                         </motion.p>
                         <motion.a 
                             initial={{ opacity: 0, x: -20 }}

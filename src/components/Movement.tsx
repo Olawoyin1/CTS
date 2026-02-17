@@ -4,13 +4,13 @@ const Movement = () => {
     const stats = [
         { emoji: '👥', label: '5,000+ Attendees', desc: 'Young people, founders, innovators' },
         { emoji: '📈', label: 'Exposure to Opportunity', desc: 'Government leaders & investors' },
-        { emoji: '💡', label: 'Ideas to Employment', desc: 'From conversation to infrastructure' },
-        { emoji: '🧩', label: 'Ecosystem Builders', desc: 'Creating sustainable pathways' },
+        { emoji: '💡', label: 'Ideas to Employment', desc: 'Turning innovation into jobs' },
+        { emoji: '🧩', label: 'Conversation to Infrastructure', desc: 'Creating sustainable pathways' },
     ];
 
     return (
         <section className="py-24 bg-white relative overflow-hidden border-b border-slate-100">
-            <div className="container-wide relative z-10">
+            <div className="max-w-7xl mx-auto relative z-10">
                 <div className="max-w-4xl mx-auto text-center mb-20">
                     <motion.h2 
                         initial={{ opacity: 0, y: 20 }}
@@ -40,7 +40,7 @@ const Movement = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
-                            className="p-10 text-center hover:bg-slate-50 transition-colors duration-300 group"
+                            className="p-10 px-3 text-center hover:bg-slate-50 transition-colors duration-300 group"
                         >
                             <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300 inline-block">
                                 {stat.emoji}

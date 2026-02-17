@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 interface TicketTier {
     name: string;
-    price: string;
+    emoji: string;
     description: string;
     features: string[];
     highlighted?: boolean;
@@ -12,32 +12,32 @@ interface TicketTier {
 const Tickets = () => {
     const tiers: TicketTier[] = [
         {
-            name: 'Student Discount',
-            price: '₦2,000',
-            description: 'For students and NYSC members',
-            features: ['Full Summit Access', 'Career Workshops', 'Certificate of Attendance', 'Networking Sessions'],
-            color: 'blue'
-        },
-        {
             name: 'General Access',
-            price: '₦5,000',
-            description: 'Most popular option',
-            features: ['All Student Benefits', 'Exhibition Floor Access', 'Lunch Included', 'Summit Swag Bag', 'Post-Summit Materials'],
+            emoji: '🎫',
+            description: 'Full admission to the summit experience.',
+            features: ['Full summit access', 'All keynotes & workshops', 'Exhibition floor access', 'Career & networking sessions'],
             highlighted: true,
             color: 'emerald'
         },
         {
             name: 'VIP Access',
-            price: '₦20,000',
-            description: 'Premium experience',
-            features: ['Priority VIP Seating', 'Speaker Lounge Access', 'Exclusive Investor Dinner', 'Premium Swag Box', 'Fast-Track Entry'],
+            emoji: '🎫',
+            description: 'Premium access for a superior experience.',
+            features: ['Priority seating', 'Access to Stakeholder Mixer', 'Exclusive networking opportunities', 'Premium summit experience'],
             color: 'purple'
         },
         {
-            name: 'Corporate',
-            price: 'Custom',
-            description: 'For organizations (10+ attendees)',
-            features: ['Bulk Pricing Available', 'Dedicated Support', 'Custom Branding Options', 'Team Registration Portal'],
+            name: 'Student Discount Pass',
+            emoji: '🎫',
+            description: 'Subsidized access for verified students.',
+            features: ['Full summit access', 'Career workshops', 'Networking sessions', 'Student-only mentorship'],
+            color: 'blue'
+        },
+        {
+            name: 'Group & Corporate',
+            emoji: '🎫',
+            description: 'Special pricing for organizations and institutions.',
+            features: ['Bulk registration', 'Dedicated support', 'Custom branding options', 'Team seating'],
             color: 'slate'
         },
     ];
@@ -49,13 +49,16 @@ const Tickets = () => {
 
             <div className="container-wide relative z-10">
                 <div className="max-w-3xl mx-auto text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Secure Your Seat</h2>
+                     <div className="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-bold uppercase tracking-wider text-blue-200 mb-4">
+                        🎟 Get Your Ticket
+                    </div>
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Early Bird Tickets Now Live</h2>
                     <p className="text-xl text-blue-100/80 font-light">
-                        Early bird pricing available. Choose the ticket that matches your goals.
+                        Secure your seat now. Choose the pass that matches your goals.
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
                     {tiers.map((tier, idx) => (
                         <motion.div
                             key={idx}
@@ -69,18 +72,10 @@ const Tickets = () => {
                                     : 'bg-white/5 border border-white/10 text-slate-300 hover:bg-white/10'
                             }`}
                         >
-                             {tier.highlighted && (
-                                <div className="absolute top-0 right-0 p-4">
-                                    <span className="inline-block px-3 py-1 bg-white/20 rounded-full text-xs font-bold uppercase tracking-wider text-white">
-                                        Popular
-                                    </span>
-                                </div>
-                            )}
-
                             <div className="mb-8">
-                                <h3 className={`font-medium mb-1 ${tier.highlighted ? 'text-blue-100' : 'text-slate-400'}`}>{tier.name}</h3>
-                                <div className="text-3xl font-bold mb-4 text-white tracking-tight">{tier.price}</div>
-                                <p className={`text-sm ${tier.highlighted ? 'text-blue-50' : 'text-slate-400'} leading-relaxed`}>{tier.description}</p>
+                                <div className="text-4xl mb-4">{tier.emoji}</div>
+                                <h3 className={`font-bold text-xl mb-2 ${tier.highlighted ? 'text-white' : 'text-slate-200'}`}>{tier.name}</h3>
+                                <p className={`text-sm ${tier.highlighted ? 'text-blue-100' : 'text-slate-400'} leading-relaxed`}>{tier.description}</p>
                             </div>
 
                             <div className="space-y-4 mb-8 flex-1">
@@ -97,11 +92,17 @@ const Tickets = () => {
                                     ? 'bg-white text-brand-blue hover:bg-slate-50' 
                                     : 'bg-white/10 text-white hover:bg-white/20'
                             }`}>
-                                Get Ticket →
+                                Buy Tickets →
                             </button>
                         </motion.div>
                     ))}
                 </div>
+                
+                 <div className="text-center">
+                    <p className="text-slate-400 text-sm">
+                        👉 <a href="#" className="underline hover:text-white transition-colors">Secure Your Seat Now</a> before prices increase.
+                    </p>
+                 </div>
             </div>
         </section>
     );

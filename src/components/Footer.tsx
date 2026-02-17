@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer className="bg-white text-brand-navy py-20 border-t border-slate-100 font-satoshi">
+        <footer className="bg-white text-brand-navy py-12 md:py-20 border-t border-slate-100 font-satoshi">
             <div className="container-wide">
                 <div className="grid md:grid-cols-4 gap-12 mb-16">
                     
@@ -13,6 +13,12 @@ const Footer = () => {
                         <p className="leading-relaxed mb-8 max-w-md text-lg text-slate-600">
                             A movement to reimagine Calabar's future through technology, innovation, and youth empowerment. Building the infrastructure for a digital economy.
                         </p>
+                        
+                         <div className="mb-8">
+                             <p className="font-bold text-lg mb-2">Follow us for updates.</p>
+                             <p className="text-brand-blue font-medium">Be part of history.</p>
+                         </div>
+
                         <div className="flex gap-4 text-2xl">
                              <a href="#" className="hover:scale-110 transition-transform">🐦</a>
                              <a href="#" className="hover:scale-110 transition-transform">💼</a>
