@@ -23,15 +23,19 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 font-satoshi border-b ${
+        <nav className={`fixed top-0 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 font-satoshi w-full px-4 ${
             scrolled 
-            ? 'bg-white/90 backdrop-blur-md border-slate-200/50 py-3 shadow-sm' 
-            : 'bg-transparent border-transparent py-5'
+            ? 'top-4' 
+            : 'top-0'
         }`}>
-            <div className="container-wide flex items-center justify-between">
+            <div className={`mx-auto transition-all duration-300 flex items-center justify-between ${
+                scrolled
+                ? 'bg-white/90 backdrop-blur-md border border-slate-200 shadow-lg rounded-full px-6 py-3 max-w-5xl'
+                : 'bg-transparent border-transparent py-5 max-w-7xl px-4 md:px-8'
+            }`}>
                 
                 {/* Logo Section */}
-                <a href="#" className="flex items-center gap-2 group z-50 relative">
+                <a href="#" className="flex items-center gap-2 group relative">
                     <div className="flex flex-col leading-tight">
                         <span className="text-xl font-bold tracking-tight text-brand-navy group-hover:text-brand-blue transition-colors">
                             CALABAR TECH
@@ -53,7 +57,7 @@ const Navbar = () => {
                     ))}
                     <a 
                         href="#tickets" 
-                        className="btn btn-primary px-6 py-2.5 text-sm"
+                        className={`btn-primary px-6 py-2.5 text-sm transition-all ${scrolled ? 'rounded-full' : 'rounded-xl'}`}
                     >
                         Get Tickets
                     </a>
@@ -62,10 +66,10 @@ const Navbar = () => {
                 {/* Mobile Menu Button */}
                 <button 
                     onClick={() => setIsOpen(!isOpen)} 
-                    className="md:hidden p-2 text-slate-600 hover:text-brand-blue z-50 relative focus:outline-none bg-slate-100 rounded-lg hover:bg-blue-50 transition-colors"
+                    className="md:hidden p-2 text-slate-600 hover:text-brand-blue focus:outline-none bg-slate-100/50 rounded-full hover:bg-blue-50 transition-colors"
                     aria-label="Toggle menu"
                 >
-                    {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                    {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
                 </button>
             </div>
 
@@ -104,7 +108,7 @@ const Navbar = () => {
                             <a 
                                 href="#tickets" 
                                 onClick={() => setIsOpen(false)}
-                                className="btn btn-primary w-full text-lg py-4"
+                                className="btn btn-primary w-full text-lg py-4 rounded-full"
                             >
                                 Get Tickets
                             </a>

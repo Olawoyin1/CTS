@@ -5,7 +5,7 @@ const Movement = () => {
         { emoji: '👥', label: '5,000+ Attendees', desc: 'Young people, founders, innovators' },
         { emoji: '📈', label: 'Exposure to Opportunity', desc: 'Government leaders & investors' },
         { emoji: '💡', label: 'Ideas to Employment', desc: 'From conversation to infrastructure' },
-        { emoji: '🖼️', label: 'Ecosystem Builders', desc: 'Creating sustainable pathways' },
+        { emoji: '🧩', label: 'Ecosystem Builders', desc: 'Creating sustainable pathways' },
     ];
 
     return (

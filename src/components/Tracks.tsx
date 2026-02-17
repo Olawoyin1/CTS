@@ -15,7 +15,7 @@ const Tracks = () => {
             bg: 'bg-purple-50',
         },
         {
-            emoji: '💻',
+            emoji: '🧑🏾‍💻',
             title: 'Entering Tech',
             desc: 'A practical pathway for beginners, career switchers, and job seekers breaking into tech.',
             bg: 'bg-emerald-50',

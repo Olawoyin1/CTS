@@ -20,7 +20,7 @@ const Hero = () => {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-blue"></span>
                         </span>
-                        <span className="text-sm font-semibold text-brand-navy tracking-wide">Nov 2026 • Calabar, Nigeria</span>
+                        <span className="text-sm font-semibold text-brand-navy tracking-wide">Nov 26th, 2026 • Calabar, Nigeria</span>
                     </motion.div>
 
                     {/* Main Title */}
@@ -62,7 +62,7 @@ const Hero = () => {
                         className="flex flex-col sm:flex-row gap-4 justify-center items-center"
                     >
                         <a href="#tickets" className="group relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-brand-navy px-8 font-medium text-white transition-all duration-300 hover:bg-blue-600 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
-                             <span className="mr-2 text-xl">✨</span> Get Tickets
+                             <span className="mr-2 text-xl">🎫</span> Get Tickets
                         </a>
                         <a href="#sponsors" className="group inline-flex h-14 items-center justify-center rounded-full border-2 border-slate-200 bg-white px-8 font-medium text-brand-navy transition-all duration-300 hover:border-brand-navy hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2">
                             <span className="mr-2 text-xl">🤝</span> Become a Partner
