@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/font/Satoshi-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/font/Satoshi-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/font/Satoshi-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/font/Satoshi-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@theme {
+  /* Brand Palette - Deep & Rich */
+  --color-brand-navy: #0B1120;
+  --color-brand-blue: #2563EB;
+  --color-brand-emerald: #10B981;
+  --color-brand-gray: #F8FAFC;
+
+  --font-satoshi: 'Satoshi', sans-serif;
+
+  /* Animations */
+  --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: var(--color-brand-navy);
+    font-family: var(--font-satoshi);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-brand-blue);
+    color: white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-24 md:py-32;
+  }
+
+  /* Minimal Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold transition-all duration-300 transform active:scale-95 text-base tracking-wide;
+  }
+
+  .btn-primary {
+    @apply bg-brand-blue text-white hover:bg-blue-700 hover:-translate-y-1;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-100 text-brand-navy hover:bg-slate-200 hover:-translate-y-1;
+  }
+
+  .btn-outline {
+    @apply border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white transition-colors duration-300;
+  }
+
+  /* Typography Utilities */
+  .heading-xl {
+    @apply text-5xl md:text-7xl font-bold text-brand-navy tracking-tight;
+  }
+
+  .heading-lg {
+    @apply text-3xl md:text-5xl font-bold text-brand-navy tracking-tight;
+  }
+
+  .text-body-lg {
+    @apply text-lg md:text-xl text-slate-600 leading-relaxed;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1;
+  }
+}
