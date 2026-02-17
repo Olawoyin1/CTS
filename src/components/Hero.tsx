@@ -28,7 +28,7 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.1 }}
-                        className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-brand-navy mb-8 leading-[0.9]"
+                        className="text-5xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-brand-navy mb-8 leading-[0.9]"
                     >
                         CALABAR TECH <br />
                         <span className="text-brand-blue">SUMMIT 2026</span>
@@ -39,7 +39,7 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="text-2xl md:text-3xl font-medium text-slate-500 mb-12 leading-tight max-w-4xl mx-auto tracking-tight"
+                        className="text-base md:text-3xl font-medium text-slate-500 mb-12 leading-tight max-w-4xl mx-auto tracking-tight"
                     >
                         Reimagining the Future: Calabar's transition into a <span className="text-brand-navy block">Tech-Driven Economy</span>
                     </motion.p>
@@ -49,7 +49,7 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="text-lg text-slate-600 max-w-2xl mx-auto mb-12 leading-relaxed"
+                        className="text-base text-slate-600 max-w-2xl mx-auto mb-12 leading-relaxed"
                     >
                         A Digital Awakening. Calabar Tech Summit 2026 is not just an event — It is a movement to transform Cross River State into a thriving tech-powered economy.
                     </motion.p>
@@ -59,12 +59,12 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.5 }}
-                        className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+                        className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full sm:w-auto"
                     >
-                        <a href="#tickets" className="group relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-brand-navy px-8 font-medium text-white transition-all duration-300 hover:bg-blue-600 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                        <a href="#tickets" className="w-full sm:w-auto group relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-brand-navy px-8 font-medium text-white transition-all duration-300 hover:bg-blue-600 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
                              <span className="mr-2 text-xl">🎫</span> Get Tickets
                         </a>
-                        <a href="#sponsors" className="group inline-flex h-14 items-center justify-center rounded-full border-2 border-slate-200 bg-white px-8 font-medium text-brand-navy transition-all duration-300 hover:border-brand-navy hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2">
+                        <a href="#sponsors" className="w-full sm:w-auto group inline-flex h-14 items-center justify-center rounded-full border-2 border-slate-200 bg-white px-8 font-medium text-brand-navy transition-all duration-300 hover:border-brand-navy hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2">
                             <span className="mr-2 text-xl">🤝</span> Become a Partner
                         </a>
                     </motion.div>

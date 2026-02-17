@@ -29,13 +29,13 @@ const Navbar = () => {
             : 'top-0'
         }`}>
             <div className={`mx-auto transition-all duration-300 flex items-center justify-between ${
-                scrolled
-                ? 'bg-white/90 backdrop-blur-md border border-slate-200 shadow-lg rounded-full px-6 py-3 max-w-6xl'
-                : 'bg-transparent border-transparent py-5 max-w-7xl px-4 md:px-8'
+                scrolled && !isOpen
+                ? 'bg-white/90 backdrop-blur-md border border-slate-200 shadow-lg rounded-full px-4 md:px-6 py-2.5 md:py-3 max-w-[95%] md:max-w-5xl'
+                : 'bg-transparent border-transparent py-4 md:py-6 max-w-7xl px-4 md:px-8'
             }`}>
                 
                 {/* Logo Section */}
-                <a href="#" className="flex items-center gap-2 group relative">
+                <a href="#" className="flex items-center gap-2 group relative z-50">
                     <div className="flex flex-col leading-tight">
                         <span className="text-xl font-bold tracking-tight text-brand-navy group-hover:text-brand-blue transition-colors">
                             CALABAR TECH
@@ -66,7 +66,7 @@ const Navbar = () => {
                 {/* Mobile Menu Button */}
                 <button 
                     onClick={() => setIsOpen(!isOpen)} 
-                    className="md:hidden p-2 text-slate-600 hover:text-brand-blue focus:outline-none bg-slate-100/50 rounded-full hover:bg-blue-50 transition-colors"
+                    className="md:hidden p-2 text-slate-600 hover:text-brand-blue focus:outline-none bg-slate-100/50 rounded-full hover:bg-blue-50 transition-colors z-50"
                     aria-label="Toggle menu"
                 >
                     {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -77,11 +77,11 @@ const Navbar = () => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div 
-                        initial={{ opacity: 0, x: '100%' }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: '100%' }}
-                        transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                        className="fixed inset-0 bg-white z-40 flex flex-col justify-center px-8 md:hidden"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="fixed inset-0 bg-white z-40 flex flex-col justify-center px-8 md:hidden h-[100dvh] w-full"
                     >
                          <div className="flex flex-col gap-6">
                             {navLinks.map((link, idx) => (
@@ -89,9 +89,9 @@ const Navbar = () => {
                                     key={link.name} 
                                     href={link.href} 
                                     onClick={() => setIsOpen(false)}
-                                    initial={{ opacity: 0, x: 50 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    transition={{ delay: idx * 0.1 }}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.1 + (idx * 0.1) }}
                                     className="text-3xl font-bold text-slate-800 hover:text-brand-blue flex items-center justify-between group"
                                 >
                                     {link.name}
@@ -108,7 +108,7 @@ const Navbar = () => {
                             <a 
                                 href="#tickets" 
                                 onClick={() => setIsOpen(false)}
-                                className="btn btn-primary w-full text-lg py-4 rounded-full"
+                                className="btn btn-primary w-full text-lg py-4 rounded-full text-center block"
                             >
                                 Get Tickets
                             </a>

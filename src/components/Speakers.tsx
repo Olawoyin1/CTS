@@ -14,8 +14,6 @@ const Speakers = () => {
         { name: 'Iyinoluwa Aboyeji', role: 'Founding Partner', company: 'Future Africa', featured: true },
         { name: 'Odunayo Eweniyi', role: 'Co-Founder & COO', company: 'PiggyVest' },
         { name: 'Fisayo Fosudo', role: 'Tech Creator', company: 'YouTube' },
-        { name: 'Startups & Investors', role: 'Ecosystem Leaders', company: 'Global' },
-        { name: 'Policymakers', role: 'Government', company: 'Cross River State' },
     ];
 
     return (
@@ -39,7 +37,7 @@ const Speakers = () => {
                              whileInView={{ opacity: 1, y: 0 }}
                              viewport={{ once: true }}
                              transition={{ delay: 0.1 }}
-                             className="text-4xl md:text-6xl font-bold text-brand-navy tracking-tight leading-[1.1]"
+                             className="text-3xl md:text-6xl font-bold text-brand-navy tracking-tight leading-tight"
                         >
                             Confirmed & <br /> <span className="text-brand-blue">Expected Speakers</span>
                         </motion.h2>
@@ -55,7 +53,7 @@ const Speakers = () => {
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16 h-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 h-auto">
                     {speakers.map((speaker, idx) => (
                         <motion.div
                             key={idx}

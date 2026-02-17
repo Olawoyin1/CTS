@@ -6,10 +6,10 @@ const WhoShouldAttend = () => {
         { emoji: '💼', title: 'Job Seekers & Switchers', desc: 'Transition into tech roles' },
         { emoji: '🎨', title: 'Freelancers & Creatives', desc: 'Scale your creative business' },
         { emoji: '🚀', title: 'Founders & Startups', desc: 'Build and grow your venture' },
-        { emoji: '👥', title: 'Employers & HR', desc: 'Access top talent' },
+        { emoji: '🧑‍💼', title: 'Employers & HR', desc: 'Access top talent' },
         { emoji: '🏛️', title: 'Policymakers', desc: 'Shape digital policy' },
         { emoji: '📈', title: 'Investors', desc: 'Discover opportunities' },
-        { emoji: '❤️', title: 'Community Groups', desc: 'Drive social impact' },
+        { emoji: '👥', title: 'Community Groups', desc: 'Drive social impact' },
     ];
 
     return (
