@@ -1,15 +1,17 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Movement from './components/Movement';
+import CTSStats from './components/CTSStats';
 import WhyCalabar from './components/WhyCalabar';
-import WhatToExpect from './components/WhatToExpect';
+import Objectives from './components/Objectives';
+import KeyFeatures from './components/KeyFeatures';
 import Tracks from './components/Tracks';
-import WhoShouldAttend from './components/WhoShouldAttend';
+import TargetAudience from './components/TargetAudience';
 import Speakers from './components/Speakers';
 import Tickets from './components/Tickets';
 import Opportunities from './components/Opportunities';
 import Sponsors from './components/Sponsors';
-import Vision from './components/Vision';
+// import Vision from './components/Vision';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 
@@ -19,15 +21,17 @@ function App() {
       <Navbar />
       <Hero />
       <Movement />
+      <CTSStats />
       <WhyCalabar />
-      <WhatToExpect />
+      <Objectives />
+      <KeyFeatures />
       <Tracks />
-      <WhoShouldAttend />
+      <TargetAudience />
       <Speakers />
       <Tickets />
       <Opportunities />
       <Sponsors />
-      <Vision />
+      {/* <Vision /> */}
       <FinalCTA />
       <Footer />
     </main>

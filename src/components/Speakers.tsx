@@ -24,14 +24,6 @@ const Speakers = () => {
             <div className="container-wide relative z-10">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                     <div className="max-w-2xl">
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            className="inline-block px-3 py-1 bg-brand-navy text-white text-xs font-bold rounded-full mb-6 uppercase tracking-wider"
-                        >
-                            🌍 World-Class Lineup
-                        </motion.div>
                         <motion.h2 
                              initial={{ opacity: 0, y: 10 }}
                              whileInView={{ opacity: 1, y: 0 }}
@@ -39,7 +31,7 @@ const Speakers = () => {
                              transition={{ delay: 0.1 }}
                              className="text-3xl md:text-6xl font-bold text-brand-navy tracking-tight leading-tight"
                         >
-                            Confirmed & <br /> <span className="text-brand-blue">Expected Speakers</span>
+                         <span className="text-brand-blue">Speakers</span>
                         </motion.h2>
                     </div>
                     <motion.p 
@@ -63,8 +55,8 @@ const Speakers = () => {
                             transition={{ delay: idx * 0.1 }}
                             className="group relative"
                         >
-                            <div className="relative overflow-hidden rounded-[2rem] bg-slate-100 aspect-[3/4] flex items-center justify-center group-hover:bg-blue-50 transition-colors duration-500">
-                                <UserRound className="w-24 h-24 text-slate-300 group-hover:text-blue-200 transition-colors duration-500" strokeWidth={1} />
+                            <div className="relative overflow-hidden rounded-[2rem] bg-white border border-slate-100 aspect-[3/4] flex items-center justify-center group-hover:bg-slate-50 transition-all duration-500 hover:shadow-xl shadow-sm">
+                                <UserRound className="w-24 h-24 text-slate-200 group-hover:text-brand-navy transition-colors duration-500" strokeWidth={1} />
                                 
                                 <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/90 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
                                 

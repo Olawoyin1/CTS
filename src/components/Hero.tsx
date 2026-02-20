@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
+import { Ticket, Handshake } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <section className="relative min-h-screen flex items-center justify-center bg-white pt-32 pb-20 overflow-hidden text-center">
+        <section className="relative min-h-screen flex items-center justify-center bg-white pt-32 pb-10 overflow-hidden text-center">
              {/* Subtle Modern Grid Background */}
              <div className="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)] pointer-events-none" />
 
@@ -20,7 +21,7 @@ const Hero = () => {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-blue"></span>
                         </span>
-                        <span className="text-sm font-semibold text-brand-navy tracking-wide">Nov 26th, 2026 • Calabar, Nigeria</span>
+                        <span className="text-sm font-semibold text-brand-navy tracking-wide">JUNE 26th, 2026 • Calabar, Nigeria</span>
                     </motion.div>
 
                     {/* Main Title */}
@@ -39,7 +40,7 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="text-base md:text-3xl font-medium text-slate-500 mb-12 leading-tight max-w-4xl mx-auto tracking-tight"
+                        className="text-base md:text-3xl font-medium text-slate-500 mb-8 leading-tight max-w-4xl mx-auto tracking-tight"
                     >
                         Reimagining the Future: Calabar's transition into a <span className="text-brand-navy block">Tech-Driven Economy</span>
                     </motion.p>
@@ -49,7 +50,7 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="text-base text-slate-600 max-w-2xl mx-auto mb-12 leading-relaxed"
+                        className="text-base text-slate-600 max-w-2xl mx-auto mb-8 leading-relaxed"
                     >
                         A Digital Awakening. Calabar Tech Summit 2026 is not just an event — It is a movement to transform Cross River State into a thriving tech-powered economy.
                     </motion.p>
@@ -61,11 +62,11 @@ const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.5 }}
                         className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full sm:w-auto"
                     >
-                        <a href="#tickets" className="w-full sm:w-auto group relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-brand-navy px-8 font-medium text-white transition-all duration-300 hover:bg-blue-600 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
-                             <span className="mr-2 text-xl">🎫</span> Get Tickets
+                        <a href="#tickets" className="w-full sm:w-auto group relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-brand-navy px-8 font-bold text-white transition-all duration-300 hover:bg-brand-blue hover:scale-105 hover:shadow-xl">
+                             <Ticket size={20} className="mr-2" /> Get Tickets
                         </a>
-                        <a href="#sponsors" className="w-full sm:w-auto group inline-flex h-14 items-center justify-center rounded-full border-2 border-slate-200 bg-white px-8 font-medium text-brand-navy transition-all duration-300 hover:border-brand-navy hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2">
-                            <span className="mr-2 text-xl">🤝</span> Become a Partner
+                        <a href="#sponsors" className="w-full sm:w-auto group inline-flex h-14 items-center justify-center rounded-full border-2 border-slate-200 bg-white px-8 font-bold text-brand-navy transition-all duration-300 hover:border-brand-navy hover:bg-slate-50">
+                            <Handshake size={20} className="mr-2 text-brand-navy" /> Become a Partner
                         </a>
                     </motion.div>
                 </div>

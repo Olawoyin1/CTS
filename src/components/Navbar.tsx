@@ -16,7 +16,7 @@ const Navbar = () => {
 
     const navLinks = [
         { name: 'About', href: '#about' },
-        { name: 'Why Calabar', href: '#why-calabar' },
+        { name: 'Why CTS', href: '#why-calabar' },
         { name: 'Tracks', href: '#tracks' },
         { name: 'Speakers', href: '#speakers' },
         { name: 'Sponsors', href: '#sponsors' },
@@ -38,9 +38,8 @@ const Navbar = () => {
                 <a href="#" className="flex items-center gap-2 group relative z-50">
                     <div className="flex flex-col leading-tight">
                         <span className="text-xl font-bold tracking-tight text-brand-navy group-hover:text-brand-blue transition-colors">
-                            CALABAR TECH
+                            CTS 2026
                         </span>
-                        <span className="text-xs font-semibold text-slate-500 tracking-widest uppercase">Summit 2026</span>
                     </div>
                 </a>
 
@@ -66,7 +65,7 @@ const Navbar = () => {
                 {/* Mobile Menu Button */}
                 <button 
                     onClick={() => setIsOpen(!isOpen)} 
-                    className="md:hidden p-2 text-slate-600 hover:text-brand-blue focus:outline-none bg-slate-100/50 rounded-full hover:bg-blue-50 transition-colors z-50"
+                    className="md:hidden p-2 text-brand-navy hover:text-brand-blue focus:outline-none bg-slate-50 border border-slate-100 rounded-full hover:bg-white transition-all z-50"
                     aria-label="Toggle menu"
                 >
                     {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

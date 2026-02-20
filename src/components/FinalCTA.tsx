@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Sparkles, MessageSquare, ArrowRight } from 'lucide-react';
 
 const FinalCTA = () => {
     return (
@@ -14,7 +15,7 @@ const FinalCTA = () => {
                     className="max-w-6xl mx-auto text-center"
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-navy/5 rounded-full mb-10 text-sm font-bold tracking-wide text-brand-navy uppercase">
-                        ✨ Join the Movement
+                        <Sparkles size={16} /> Join the Movement
                     </div>
                     
                     <h2 className="text-4xl md:text-6xl  font-black mb-10 tracking-tighter leading-[0.9]">
@@ -31,13 +32,13 @@ const FinalCTA = () => {
                              href="#tickets" 
                              className="group h-16 px-10 rounded-full bg-brand-navy text-white text-xl font-bold flex items-center gap-3 transition-all hover:scale-105 hover:bg-brand-blue shadow-2xl shadow-navy-900/20"
                         >
-                            Get Your Ticket <span className="group-hover:translate-x-1 transition-transform">→</span>
+                            Get Your Ticket <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </a>
                         <a 
                             href="#sponsors" 
                             className="group h-16 px-10 rounded-full bg-white text-brand-navy border-2 border-slate-200 text-xl font-bold flex items-center gap-3 transition-all hover:border-brand-navy hover:bg-slate-50"
                         >
-                            Partner With Us <span className="group-hover:rotate-12 transition-transform">🤝</span>
+                            Contact Us <MessageSquare size={20} className="group-hover:rotate-12 transition-transform text-brand-navy" />
                         </a>
                     </div>
                 </motion.div>

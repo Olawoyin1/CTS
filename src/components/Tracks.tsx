@@ -1,24 +1,28 @@
 import { motion } from 'framer-motion';
+import { Cpu, Palette, Code2 } from 'lucide-react';
 
 const Tracks = () => {
     const tracks = [
         {
-            emoji: '🤖',
+            icon: Cpu,
             title: 'Emerging Tech (AI & ML)',
             desc: 'Explore artificial intelligence, machine learning, and future technologies shaping Africa\'s economic landscape.',
             bg: 'bg-blue-50',
+            color: 'text-brand-navy',
         },
         {
-            emoji: '🎨',
+            icon: Palette,
             title: 'The Creative Economy',
             desc: 'Where technology meets culture. A spotlight on creators, storytellers, and platforms redefining Africa\'s digital exports.',
             bg: 'bg-purple-50',
+            color: 'text-brand-navy',
         },
         {
-            emoji: '🧑🏾‍💻',
+            icon: Code2,
             title: 'Entering Tech',
             desc: 'A practical pathway for beginners, career switchers, and job seekers breaking into tech.',
             bg: 'bg-emerald-50',
+            color: 'text-brand-navy',
         },
     ];
 
@@ -53,9 +57,11 @@ const Tracks = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.15 }}
-                            className={`p-10 rounded-3xl ${track.bg} hover:-translate-y-2 transition-transform duration-300 border border-transparent hover:border-slate-100/50`}
+                            className={`group p-10 rounded-3xl ${track.bg} hover:-translate-y-2 transition-all duration-300 border border-transparent hover:shadow-xl hover:border-slate-100/50`}
                         >
-                            <div className="text-6xl mb-8">{track.emoji}</div>
+                            <div className={`w-16 h-16 rounded-2xl bg-white flex items-center justify-center mb-10 group-hover:scale-110 transition-transform duration-300 shadow-sm ${track.color}`}>
+                                <track.icon size={32} strokeWidth={1.5} />
+                            </div>
                             
                             <h3 className="text-2xl font-bold text-brand-navy mb-4 tracking-tight">
                                 {track.title}

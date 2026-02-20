@@ -1,15 +1,25 @@
 import { motion } from 'framer-motion';
+import { 
+    GraduationCap, 
+    Briefcase, 
+    Palette, 
+    Rocket, 
+    UserCheck, 
+    Landmark, 
+    TrendingUp, 
+    Users 
+} from 'lucide-react';
 
 const WhoShouldAttend = () => {
     const audiences = [
-        { emoji: '🎓', title: 'Students & NYSC Members', desc: 'Launch your tech career' },
-        { emoji: '💼', title: 'Job Seekers & Switchers', desc: 'Transition into tech roles' },
-        { emoji: '🎨', title: 'Freelancers & Creatives', desc: 'Scale your creative business' },
-        { emoji: '🚀', title: 'Founders & Startups', desc: 'Build and grow your venture' },
-        { emoji: '🧑‍💼', title: 'Employers & HR', desc: 'Access top talent' },
-        { emoji: '🏛️', title: 'Policymakers', desc: 'Shape digital policy' },
-        { emoji: '📈', title: 'Investors', desc: 'Discover opportunities' },
-        { emoji: '👥', title: 'Community Groups', desc: 'Drive social impact' },
+        { icon: GraduationCap, title: 'Students & NYSC Members', desc: 'Launch your tech career', color: 'text-brand-navy' },
+        { icon: Briefcase, title: 'Job Seekers & Switchers', desc: 'Transition into tech roles', color: 'text-brand-navy' },
+        { icon: Palette, title: 'Freelancers & Creatives', desc: 'Scale your creative business', color: 'text-brand-navy' },
+        { icon: Rocket, title: 'Founders & Startups', desc: 'Build and grow your venture', color: 'text-brand-navy' },
+        { icon: UserCheck, title: 'Employers & HR', desc: 'Access top talent', color: 'text-brand-navy' },
+        { icon: Landmark, title: 'Policymakers', desc: 'Shape digital policy', color: 'text-brand-navy' },
+        { icon: TrendingUp, title: 'Investors', desc: 'Discover opportunities', color: 'text-brand-navy' },
+        { icon: Users, title: 'Community Groups', desc: 'Drive social impact', color: 'text-brand-navy' },
     ];
 
     return (
@@ -45,7 +55,9 @@ const WhoShouldAttend = () => {
                             transition={{ delay: idx * 0.05 }}
                             className="group p-10 border-b border-r border-slate-100 hover:bg-slate-50 transition-colors duration-300 flex flex-col items-center text-center"
                         >
-                             <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">{audience.emoji}</div>
+                             <div className={`mb-6 p-4 rounded-2xl bg-slate-50 group-hover:bg-white group-hover:shadow-md transition-all duration-300 group-hover:scale-110 ${audience.color}`}>
+                                <audience.icon size={32} strokeWidth={1.5} />
+                             </div>
                             <h3 className="font-bold text-brand-navy mb-2 text-lg">
                                 {audience.title}
                             </h3>

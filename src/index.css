@@ -92,7 +92,7 @@
   }
 
   .section-padding {
-    @apply py-24 md:py-32;
+    @apply py-10 md:py-15;
   }
 
   /* Minimal Buttons */
