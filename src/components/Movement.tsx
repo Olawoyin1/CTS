@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
-import { TrendingUp, Lightbulb, Network, Users } from 'lucide-react';
+import { TrendingUp, Lightbulb, Network } from 'lucide-react';
+import { HiOutlineUserGroup } from "react-icons/hi";
 
 const Movement = () => {
     const stats = [
-        { icon: Users, label: '5,000+ Attendees', desc: 'Young people, founders, innovators', color: 'text-brand-navy' },
+        { icon: HiOutlineUserGroup, label: '5,000+ Attendees', desc: 'Young people, founders, innovators', color: 'text-brand-navy' },
         { icon: TrendingUp, label: 'Exposure to Opportunity', desc: 'Government leaders & investors', color: 'text-brand-navy' },
         { icon: Lightbulb, label: 'Ideas to Employment', desc: 'Turning innovation into jobs', color: 'text-brand-navy' },
         { icon: Network, label: 'Conversation to Infrastructure', desc: 'Creating sustainable pathways', color: 'text-brand-navy' },

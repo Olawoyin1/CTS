@@ -1,5 +1,13 @@
 import { motion } from 'framer-motion';
-import { Lightbulb, Handshake, Sprout, Briefcase, Target, AlertTriangle, ArrowRight } from 'lucide-react';
+import { 
+    Lightbulb, 
+    Handshake, 
+    Sprout, 
+    Briefcase, 
+    Target, 
+    AlertTriangle, 
+    ArrowRight 
+} from 'lucide-react';
 
 const WhyCalabar = () => {
     const solutions = [
@@ -78,7 +86,7 @@ const WhyCalabar = () => {
                                 {solutions.map((item, idx) => (
                                     <div key={idx} className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-white/5 transition-all duration-300">
                                         <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform text-brand-navy">
-                                            <item.icon size={20} strokeWidth={2.5} />
+                                            <item.icon size={20} />
                                         </div>
                                         <div>
                                             <h4 className="font-bold text-white mb-1 text-lg">{item.title}</h4>

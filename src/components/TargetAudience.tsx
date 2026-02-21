@@ -1,5 +1,13 @@
 import { motion } from 'framer-motion';
-import { Landmark, Rocket, Building2, Users, CheckCircle2 } from 'lucide-react';
+import { 
+    Landmark, 
+    Rocket, 
+    Building2,
+    Palette,
+    GraduationCap
+} from 'lucide-react';
+import { HiOutlineUserGroup } from "react-icons/hi";
+import { IoCheckmarkOutline } from "react-icons/io5";
 
 const TargetAudience = () => {
     const categories = [
@@ -38,7 +46,7 @@ const TargetAudience = () => {
         },
         {
             title: 'Workforce & Career Professionals',
-            icon: Users,
+            icon: HiOutlineUserGroup,
             items: [
                 'Career Professionals & Young Workers',
                 'Freelancers & Gig Workers',
@@ -47,11 +55,41 @@ const TargetAudience = () => {
             ],
             color: 'bg-amber-50',
             iconColor: 'text-amber-600'
-        }
+        },
+        {
+            title: 'Creative Economy & Digital Media',
+            icon: Palette,
+            items: [
+                'Content Creators, Influencers & Digital Creatives'
+            ],
+            color: 'bg-rose-50',
+            iconColor: 'text-rose-600'
+        },
+        {
+            title: 'Community & Faith-Based Organizations',
+            icon: HiOutlineUserGroup,
+            items: [
+                'Church Organizations & Community Groups'
+            ],
+            color: 'bg-cyan-50',
+            iconColor: 'text-cyan-600'
+        },
+        {
+            title: 'Education & Academic Institutions',
+            icon: GraduationCap,
+            items: [
+                'University & Polytechnic Students',
+                'Recent Secondary School Graduates',
+                'Lecturers, Teachers & Academic Staff',
+                'Universities, Polytechnics & Training Institutions'
+            ],
+            color: 'bg-indigo-50',
+            iconColor: 'text-indigo-600'
+        },
     ];
 
     return (
-        <section id="audience" className="py-24 bg-white relative overflow-hidden">
+        <section id="audience" className="section-padding bg-white relative overflow-hidden">
             <div className="container-wide relative z-10">
                 <div className="max-w-3xl mx-auto text-center mb-20">
                     <motion.div 
@@ -66,7 +104,7 @@ const TargetAudience = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-4xl md:text-6xl font-black text-brand-navy tracking-tighter mb-6"
+                        className="text-4xl md:text-6xl font-black text-brand-navy tracking-tighter mb-3"
                     >
                         Target <span className="text-brand-blue">Audience</span>
                     </motion.h2>
@@ -89,7 +127,7 @@ const TargetAudience = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
-                            className="group p-8 md:p-12 rounded-[3rem] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500"
+                            className="group p-8 rounded-[3rem] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500"
                         >
                             <div className="flex flex-col md:flex-row gap-8 items-start">
                                 <div className={`w-16 h-16 rounded-2xl ${category.color} ${category.iconColor} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
@@ -102,7 +140,7 @@ const TargetAudience = () => {
                                     <div className="space-y-4">
                                         {category.items.map((item, i) => (
                                             <div key={i} className="flex items-start gap-3">
-                                                <CheckCircle2 size={18} className="text-brand-navy mt-1 flex-shrink-0 opacity-20 group-hover:opacity-100 transition-opacity" />
+                                                <IoCheckmarkOutline size={18} className="text-brand-navy mt-1 flex-shrink-0 opacity-20 group-hover:opacity-100 transition-opacity" />
                                                 <p className="text-slate-600 font-semibold leading-snug">
                                                     {item}
                                                 </p>

@@ -43,7 +43,7 @@ const Tickets = () => {
     ];
 
     return (
-        <section id="tickets" className="py-24 bg-brand-navy relative overflow-hidden">
+        <section id="tickets" className="section-padding bg-brand-navy relative overflow-hidden">
              {/* Background Glow */}
              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] bg-brand-blue/10 blur-[120px] rounded-full pointer-events-none" />
 
@@ -52,7 +52,7 @@ const Tickets = () => {
                      <div className="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-bold uppercase tracking-wider text-blue-200 mb-4">
                         🎟 Get Your Ticket
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Early Bird Tickets Now Live</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-3 tracking-tight">Early Bird Tickets Now Live</h2>
                     <p className="text-xl text-blue-100/80 font-light">
                         Secure your seat now. Choose the pass that matches your goals.
                     </p>
@@ -68,7 +68,7 @@ const Tickets = () => {
                             transition={{ delay: idx * 0.1 }}
                             className={`relative rounded-3xl p-8 flex flex-col transition-all duration-300 ${
                                 tier.highlighted 
-                                    ? 'bg-brand-blue text-white shadow-2xl shadow-blue-500/20 scale-105 z-10 ring-4 ring-blue-400/20' 
+                                    ? 'bg-brand-blue text-white shadow-2xl shadow-blue-500/20 md:scale-105 z-10 ring-4 ring-blue-400/20' 
                                     : 'bg-white/5 border border-white/10 text-slate-300 hover:bg-white/10'
                             }`}
                         >
@@ -99,9 +99,9 @@ const Tickets = () => {
                 </div>
                 
                  <div className="text-center">
-                    <p className="text-slate-400 text-sm">
+                    {/* <p className="text-slate-400 text-sm">
                         👉 <a href="#" className="underline hover:text-white transition-colors">Secure Your Seat Now</a> before prices increase.
-                    </p>
+                    </p> */}
                  </div>
             </div>
         </section>

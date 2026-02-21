@@ -1,5 +1,12 @@
 import { motion } from 'framer-motion';
-import { Mic, Handshake, Laptop, GraduationCap, Rocket, Landmark } from 'lucide-react';
+import { 
+    Mic, 
+    Handshake, 
+    Laptop, 
+    GraduationCap, 
+    Rocket, 
+    Landmark 
+} from 'lucide-react';
 
 const WhatToExpect = () => {
     const events = [

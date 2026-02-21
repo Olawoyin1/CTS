@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
-import { Building2, Mic2, Calendar } from 'lucide-react';
+import { Building2, Mic, Calendar } from 'lucide-react';
 import { HiOutlineUserGroup } from "react-icons/hi";
-
 const CTSStats = () => {
     const stats = [
         { 
@@ -21,7 +20,7 @@ const CTSStats = () => {
         { 
             value: '20+', 
             label: 'Featured Speakers', 
-            icon: Mic2, 
+            icon: Mic, 
             bg: 'bg-[#c47d15]', // Gold/Brown
             delay: 0.3 
         },
@@ -35,7 +34,7 @@ const CTSStats = () => {
     ];
 
     return (
-        <section className="py-24 bg-black text-white relative overflow-hidden">
+        <section className="section-padding bg-black text-white relative overflow-hidden">
             <div className="container-wide relative z-10 px-4">
                 <div className="mb-16">
                     <motion.h2 
@@ -65,7 +64,7 @@ const CTSStats = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: stat.delay, duration: 0.5 }}
-                            className={`${stat.bg} relative aspect-[4/5] p-8 rounded-2xl md:rounded-3xl overflow-hidden group hover:scale-[1.02] transition-transform duration-500 shadow-xl`}
+                            className={`${stat.bg} relative md:aspect-[4/5] p-8 rounded-2xl md:rounded-3xl overflow-hidden group hover:scale-[1.02] transition-transform duration-500 shadow-xl`}
                         >
                             {/* Decorative Icon in bottom-left */}
                             <div className="absolute -bottom-6 -left-6 opacity-20 transform -rotate-12 transition-transform duration-700 group-hover:rotate-0 group-hover:scale-110">

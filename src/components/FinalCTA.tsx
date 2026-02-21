@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
-import { Sparkles, MessageSquare, ArrowRight } from 'lucide-react';
+import { 
+Sparkles, ArrowRight, MessageSquare } from 'lucide-react';
 
 const FinalCTA = () => {
     return (
-        <section className="py-32 relative overflow-hidden bg-white text-brand-navy">
+        <section className="section-padding relative overflow-hidden bg-white text-brand-navy">
             {/* Minimal Grid Background */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_at_center,black_60%,transparent_100%)] pointer-events-none" />
 

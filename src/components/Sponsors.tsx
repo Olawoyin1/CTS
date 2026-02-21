@@ -1,20 +1,55 @@
 import { motion } from 'framer-motion';
-import { Users, Eye, Lightbulb, TrendingUp, CheckCircle2, Download, Handshake, Star } from 'lucide-react';
-
+import { 
+    Eye, 
+    Lightbulb, 
+    TrendingUp, 
+     
+    Download,
+    Star,
+    Handshake
+} from 'lucide-react';
+import { HiOutlineUserGroup } from "react-icons/hi";
+import { IoCheckmarkOutline } from "react-icons/io5";
 const Sponsors = () => {
     const benefits = [
-        { icon: Users, title: 'Talent Access', desc: 'Direct access to emerging talent and recruitment pipelines.', color: 'text-brand-navy', bg: 'bg-slate-50' },
-        { icon: Eye, title: 'Brand Visibility', desc: 'Brand visibility before, during, and after the summit.', color: 'text-brand-navy', bg: 'bg-slate-50' },
-        { icon: Lightbulb, title: 'Thought Leadership', desc: 'Thought leadership opportunities to shape industry conversations.', color: 'text-brand-navy', bg: 'bg-slate-50' },
-        { icon: TrendingUp, title: 'Social Impact', desc: 'Policy alignment & measurable social impact.', color: 'text-brand-navy', bg: 'bg-slate-50' },
+        { 
+            icon: Eye, 
+            title: 'Brand Visibility & Movement', 
+            desc: 'Gain high-impact visibility through omni-channel activations, aligning your brand with innovation and digital empowerment before, during, and after the summit.', 
+            color: 'text-brand-navy', 
+            bg: 'bg-slate-50' 
+        },
+        { 
+            icon: HiOutlineUserGroup, 
+            title: 'Talent & Market Access', 
+            desc: 'Access a direct pipeline of emerging talent and innovators, gaining data insights and recruitment opportunities to drive customer acquisition and market growth.', 
+            color: 'text-brand-navy', 
+            bg: 'bg-slate-50' 
+        },
+        { 
+            icon: Lightbulb, 
+            title: 'Thought Leadership', 
+            desc: 'Showcase your expertise through keynotes, panels, and workshops, positioning your organization as a top-tier leader in technology and economic development.', 
+            color: 'text-brand-navy', 
+            bg: 'bg-slate-50' 
+        },
+        { 
+            icon: TrendingUp, 
+            title: 'Policy & Social Impact', 
+            desc: 'Align with government digital transformation priorities to deliver measurable social impact and strengthen strategic public-private partnerships.', 
+            color: 'text-brand-navy', 
+            bg: 'bg-slate-50' 
+        },
     ];
 
     const opportunities = [
-        'Event Partnership',
-        'Stage Sponsorship',
-        'Exhibition Booth',
-        'Workshop Sponsorship',
-        'CTS Tech Starter Competition Sponsor'
+        { title: 'Conference Sponsorship', desc: 'High-level brand visibility through multiple categories.' },
+        { title: 'Stage Sponsorship', desc: 'Sponsor key stages: Main, Startup, Creative, or Enterprise.' },
+        { title: 'Exhibition Booths', desc: 'Showcase your brand and build sales leads via engaging exhibitions.' },
+        { title: 'Product Showcase', desc: 'Sponsor portfolio showcases or live tech demos (e.g., 5G/AI).' },
+        { title: 'Session Sponsorship', desc: 'Sponsor specific panels, fireside chats, or masterclasses.' },
+        { title: 'CTS Battlefield', desc: 'Sponsor our flagship annual startup pitch competition.' },
+        { title: 'Mixers & After-Parties', desc: 'Sponsor the opening stakeholder mixer and closing party.' }
     ];
 
     return (
@@ -29,7 +64,7 @@ const Sponsors = () => {
                     >
                         <Star size={14} className="fill-current" /> Partner With Us
                     </motion.div>
-                    <h2 className="heading-lg mb-6">Become a Sponsor</h2>
+                    <h2 className="heading-lg mb-2">Become a Sponsor</h2>
                     <p className="text-body-lg">
                         Position your brand at the center of Calabar’s digital transformation.
                     </p>
@@ -47,10 +82,10 @@ const Sponsors = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: idx * 0.1 }}
-                                    className="flex items-start gap-5 bg-white p-6 rounded-2xl border border-slate-100 hover:border-blue-200 hover:shadow-lg transition-all duration-300 group"
+                                    className="flex items-start gap-5 bg-white p-6 rounded-2xl border border-slate-100 hover:border-blue-200 hover:shadow transition-all duration-300 group"
                                 >
                                     <div className={`w-12 h-12 rounded-xl ${benefit.bg} ${benefit.color} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
-                                        <benefit.icon size={24} strokeWidth={2} />
+                                        <benefit.icon size={24} />
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-brand-navy mb-1">{benefit.title}</h4>
@@ -64,7 +99,7 @@ const Sponsors = () => {
                     {/* Sponsorship Opportunities */}
                     <div className="bg-white p-8 md:p-10 rounded-3xl border border-slate-200 shadow-sm">
                          <h3 className="text-2xl font-bold text-brand-navy mb-8">Sponsorship Opportunities</h3>
-                         <ul className="space-y-4 mb-10">
+                         <ul className="space-y-6 mb-10">
                             {opportunities.map((opp, idx) => (
                                 <motion.li 
                                     key={idx}
@@ -72,10 +107,19 @@ const Sponsors = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: idx * 0.1 }}
-                                    className="flex items-center gap-3 text-lg text-slate-700 font-medium"
+                                    className="flex items-start gap-4"
                                 >
-                                    <CheckCircle2 className="text-brand-blue" size={20} />
-                                    {opp}
+                                    <div className="mt-1 flex-shrink-0">
+                                        <IoCheckmarkOutline className="text-brand-blue" size={18} />
+                                    </div>
+                                    <div>
+                                        <p className="text-brand-navy font-bold leading-none mb-1">
+                                            {opp.title}
+                                        </p>
+                                        <p className="text-slate-500 text-sm leading-tight">
+                                            {opp.desc}
+                                        </p>
+                                    </div>
                                 </motion.li>
                             ))}
                          </ul>

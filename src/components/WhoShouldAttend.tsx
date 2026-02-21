@@ -4,11 +4,11 @@ import {
     Briefcase, 
     Palette, 
     Rocket, 
-    UserCheck, 
+    UserCircle, 
     Landmark, 
     TrendingUp, 
-    Users 
 } from 'lucide-react';
+import { HiOutlineUserGroup } from "react-icons/hi";
 
 const WhoShouldAttend = () => {
     const audiences = [
@@ -16,10 +16,10 @@ const WhoShouldAttend = () => {
         { icon: Briefcase, title: 'Job Seekers & Switchers', desc: 'Transition into tech roles', color: 'text-brand-navy' },
         { icon: Palette, title: 'Freelancers & Creatives', desc: 'Scale your creative business', color: 'text-brand-navy' },
         { icon: Rocket, title: 'Founders & Startups', desc: 'Build and grow your venture', color: 'text-brand-navy' },
-        { icon: UserCheck, title: 'Employers & HR', desc: 'Access top talent', color: 'text-brand-navy' },
+        { icon: UserCircle, title: 'Employers & HR', desc: 'Access top talent', color: 'text-brand-navy' },
         { icon: Landmark, title: 'Policymakers', desc: 'Shape digital policy', color: 'text-brand-navy' },
         { icon: TrendingUp, title: 'Investors', desc: 'Discover opportunities', color: 'text-brand-navy' },
-        { icon: Users, title: 'Community Groups', desc: 'Drive social impact', color: 'text-brand-navy' },
+        { icon: HiOutlineUserGroup, title: 'Community Groups', desc: 'Drive social impact', color: 'text-brand-navy' },
     ];
 
     return (

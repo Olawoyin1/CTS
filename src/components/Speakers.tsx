@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { UserRound } from 'lucide-react';
+import { 
+UserRound } from 'lucide-react';
 
 interface Speaker {
     name: string;
@@ -17,7 +18,7 @@ const Speakers = () => {
     ];
 
     return (
-        <section id="speakers" className="py-24 bg-white relative overflow-hidden">
+        <section id="speakers" className="section-padding bg-white relative overflow-hidden">
              {/* Subtle pattern */}
              <div className="absolute top-0 right-0 w-1/3 h-full bg-slate-50/50 skew-x-12 pointer-events-none" />
 
@@ -55,8 +56,8 @@ const Speakers = () => {
                             transition={{ delay: idx * 0.1 }}
                             className="group relative"
                         >
-                            <div className="relative overflow-hidden rounded-[2rem] bg-white border border-slate-100 aspect-[3/4] flex items-center justify-center group-hover:bg-slate-50 transition-all duration-500 hover:shadow-xl shadow-sm">
-                                <UserRound className="w-24 h-24 text-slate-200 group-hover:text-brand-navy transition-colors duration-500" strokeWidth={1} />
+                            <div className="relative overflow-hidden rounded-[2rem] bg-white border border-slate-100 md:aspect-[3/4] aspect-[1/1] flex items-center justify-center group-hover:bg-slate-50 transition-all duration-500 hover:shadow-xl shadow-sm">
+                                <UserRound className="w-24 h-24 text-slate-200 group-hover:text-brand-navy transition-colors duration-500" />
                                 
                                 <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/90 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
                                 

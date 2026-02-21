@@ -23,7 +23,7 @@ const Objectives = () => {
     ];
 
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="section-padding bg-white relative overflow-hidden">
             {/* Subtle Gradient Background */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(50%_50%_at_50%_50%,rgba(59,130,246,0.02)_0%,rgba(255,255,255,0)_100%)] pointer-events-none" />
             

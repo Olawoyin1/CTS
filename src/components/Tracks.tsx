@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Cpu, Palette, Code2 } from 'lucide-react';
+import { Cpu, Palette, Code2, Rocket, Landmark } from 'lucide-react';
 
 const Tracks = () => {
     const tracks = [
@@ -24,6 +24,20 @@ const Tracks = () => {
             bg: 'bg-emerald-50',
             color: 'text-brand-navy',
         },
+        {
+            icon: Rocket,
+            title: 'Startup Festival',
+            desc: 'A celebration of Africa’s most promising startups, where founders pitch, share lessons, and connect with investors and enablers.',
+            bg: 'bg-rose-50',
+            color: 'text-brand-navy',
+        },
+        {
+            icon: Landmark,
+            title: 'Government & Policy',
+            desc: 'Building an enabling environment for innovation through discussions on infrastructure, policy, and digital governance.',
+            bg: 'bg-slate-50',
+            color: 'text-brand-navy',
+        },
     ];
 
     return (
@@ -34,7 +48,7 @@ const Tracks = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="heading-lg mb-6"
+                        className="heading-lg mb-3"
                     >
                         Content Tracks
                     </motion.h2>
@@ -45,11 +59,11 @@ const Tracks = () => {
                         transition={{ delay: 0.1 }}
                         className="text-body-lg"
                     >
-                        Three specialized tracks designed to meet you where you are and take you where you need to be.
+                        Specialized tracks designed to meet you where you are and take you where you need to be.
                     </motion.p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {tracks.map((track, idx) => (
                         <motion.div
                             key={idx}
