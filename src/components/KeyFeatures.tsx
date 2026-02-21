@@ -153,7 +153,7 @@ const KeyFeatures = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                    className="grid grid-cols-1 md:grid-cols-2  gap-6 mb-8 px-4"
+                    className="grid grid-cols-1 md:grid-cols-2  gap-6 mb-8"
                 >
                     {/* Featured Item - Large */}
                     <motion.div 
@@ -217,11 +217,14 @@ const KeyFeatures = () => {
                                             <h3 className="text-xl font-black text-brand-navy mb-3 group-hover:text-brand-blue transition-colors">
                                                 {feature.title}
                                             </h3>
-                                            <p className="text-sm text-slate-500 font-medium leading-relaxed">
+                                            <p className="text-sm hidden md:flex text-slate-500 font-medium leading-relaxed">
                                                 {feature.desc}
                                             </p>
                                         </div>
                                     </div>
+                                            <p className="text-sm flex md:hidden text-slate-500 p-0 m-0 font-medium leading-relaxed">
+                                                {feature.desc}
+                                            </p>
                                 </motion.div>
                             );
                         })}

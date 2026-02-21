@@ -29,7 +29,7 @@ const Objectives = () => {
             
             <div className="container-wide relative z-10">
                 <div className="max-w-6xl mx-auto">
-                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+                    <div className="grid lg:grid-cols-2 gap-4 md:gap-16 items-center">
                         
                         {/* Left: Heading Section */}
                         <motion.div
@@ -42,7 +42,7 @@ const Objectives = () => {
                                 initial={{ opacity: 0, y: 10 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                className="inline-flex items-center gap-2 px-3 py-1 bg-brand-navy text-white text-[10px] font-bold rounded-full mb-6 uppercase tracking-[0.2em]"
+                                className="inline-flex items-center gap-2 px-3 py-1 bg-brand-navy text-white text-[10px] font-bold rounded-full mb-4 uppercase tracking-[0.2em]"
                             >
                                 <Target size={12} /> Project Objectives & Goals
                             </motion.div>

@@ -84,7 +84,7 @@ const WhyCalabar = () => {
 
                             <div className="grid gap-4">
                                 {solutions.map((item, idx) => (
-                                    <div key={idx} className="group flex items-start gap-4 p-4 rounded-2xl hover:bg-white/5 transition-all duration-300">
+                                    <div key={idx} className="group flex items-start gap-4 md:p-4 rounded-2xl hover:bg-white/5 transition-all duration-300">
                                         <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform text-brand-navy">
                                             <item.icon size={20} />
                                         </div>
@@ -92,7 +92,7 @@ const WhyCalabar = () => {
                                             <h4 className="font-bold text-white mb-1 text-lg">{item.title}</h4>
                                             <p className="text-slate-400 text-sm leading-relaxed font-medium">{item.desc}</p>
                                         </div>
-                                        <ArrowRight size={20} className="ml-auto text-white/20 group-hover:text-white/50 group-hover:translate-x-1 transition-all" />
+                                        <ArrowRight size={20} className="ml-auto hidden md:flex text-white/20 group-hover:text-white/50 group-hover:translate-x-1 transition-all" />
                                     </div>
                                 ))}
                             </div>
