@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Users, Building2, Mic2, Calendar } from 'lucide-react';
+import { Building2, Mic2, Calendar } from 'lucide-react';
+import { HiOutlineUserGroup } from "react-icons/hi";
 
 const CTSStats = () => {
     const stats = [
@@ -13,7 +14,7 @@ const CTSStats = () => {
         { 
             value: '3000+', 
             label: 'Expected Attendees', 
-            icon: Users, 
+            icon: HiOutlineUserGroup, 
             bg: 'bg-[#002d6b]', // Navy Blue
             delay: 0.2 
         },

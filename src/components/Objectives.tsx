@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
-import { Target, Users, Zap, BookOpen, GraduationCap, CheckCircle2 } from 'lucide-react';
+import { Target, Zap, BookOpen, GraduationCap, CheckCircle2 } from 'lucide-react';
+import { HiOutlineUserGroup } from "react-icons/hi";
 
 const Objectives = () => {
     const goals = [
         {
-            icon: Users,
+            icon: HiOutlineUserGroup,
             text: 'Introduce 5,000+ young people and residents in Calabar to tech-driven opportunities',
         },
         {
@@ -27,7 +28,7 @@ const Objectives = () => {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(50%_50%_at_50%_50%,rgba(59,130,246,0.02)_0%,rgba(255,255,255,0)_100%)] pointer-events-none" />
             
             <div className="container-wide relative z-10">
-                <div className="max-w-5xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         
                         {/* Left: Heading Section */}
