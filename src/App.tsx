@@ -27,7 +27,7 @@ function App() {
       <Speakers />
       <WhyCalabar />
       <Objectives />
-      <KeyFeatures />
+      {/* <KeyFeatures /> */}
       <Tracks />
       <TargetAudience />
       <Tickets />

@@ -6,7 +6,7 @@ const Objectives = () => {
     const goals = [
         {
             icon: HiOutlineUserGroup,
-            text: 'Introduce 5,000+ young people and residents in Calabar to tech-driven opportunities',
+            text: 'Introduce 3,000+ young people and residents in Calabar to tech-driven opportunities',
             bg: 'bg-[#e65121]', 
         },
         {
