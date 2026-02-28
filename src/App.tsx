@@ -22,8 +22,8 @@ function App() {
       <Hero />
       <Movement />
       <CTSStats />
-      <WhyCalabar />
       <Speakers />
+      <WhyCalabar />
       <Objectives />
       <KeyFeatures />
       <Tracks />
