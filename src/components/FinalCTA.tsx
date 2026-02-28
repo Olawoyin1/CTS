@@ -36,7 +36,7 @@ const FinalCTA = () => {
                             Get Your Ticket <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </a>
                         <a 
-                            href="#sponsors" 
+                            href="mailto:calabartechsummit@thegenzhr.com"  
                             className="group h-16 px-10 rounded-full bg-white text-brand-navy border-2 border-slate-200 text-xl font-bold flex items-center gap-3 transition-all hover:border-brand-navy hover:bg-slate-50"
                         >
                             Contact Us <MessageSquare size={20} className="group-hover:rotate-12 transition-transform text-brand-navy" />

@@ -52,7 +52,7 @@ const Tickets = () => {
                      <div className="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-bold uppercase tracking-wider text-blue-200 mb-4">
                         🎟 Get Your Ticket
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-3 tracking-tight">Early Bird Tickets Now Live</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-3 tracking-tight">Early Bird Tickets Coming Soon</h2>
                     <p className="text-xl text-blue-100/80 font-light">
                         Secure your seat now. Choose the pass that matches your goals.
                     </p>
@@ -87,7 +87,7 @@ const Tickets = () => {
                                 ))}
                             </div>
 
-                            <button className={`w-full py-3.5 rounded-xl font-bold transition-all ${
+                            <button disabled className={`w-full cursor-not-allowed py-3.5 rounded-xl font-bold transition-all ${
                                 tier.highlighted 
                                     ? 'bg-white text-brand-blue hover:bg-slate-50' 
                                     : 'bg-white/10 text-white hover:bg-white/20'

@@ -94,7 +94,7 @@ const KeyFeatures = () => {
             </div>
 
             <div className="container-wide relative z-10">
-                <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16 px-4">
+                {/* <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16 px-4">
                     <div className="max-w-2xl">
                         <motion.div 
                             initial={{ opacity: 0, x: -20 }}
@@ -145,7 +145,7 @@ const KeyFeatures = () => {
                             <p className="text-slate-500">Ready to transform</p>
                         </div>
                     </motion.div>
-                </div>
+                </div> */}
 
                 {/* Main Features Bento-style Grid */}
                 <motion.div 

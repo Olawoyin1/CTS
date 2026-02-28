@@ -30,8 +30,9 @@ const Movement = () => {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed"
                     >
-                        We are bringing together young people, founders, innovators, government leaders, investors, and ecosystem builders to spark a digital revolution.
+                        We are bringing together young people, founders, innovators, government leaders, investors, and ecosystem builders to spark a digital revolution. 
                     </motion.p>
+                  
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-slate-100 border-y border-slate-100 bg-white">

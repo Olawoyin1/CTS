@@ -46,14 +46,7 @@ const Hero = () => {
                     </motion.p>
 
                     {/* Description */}
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.4 }}
-                        className="text-base text-slate-600 max-w-2xl mx-auto mb-8 leading-relaxed"
-                    >
-                        A Digital Awakening. Calabar Tech Summit 2026 is not just an event — It is a movement to transform Cross River State into a thriving tech-powered economy.
-                    </motion.p>
+                    
 
                     {/* CTAs */}
                     <motion.div
@@ -65,7 +58,7 @@ const Hero = () => {
                         <a href="#tickets" className="w-full sm:w-auto group relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-brand-navy px-8 font-bold text-white transition-all duration-300 hover:bg-brand-blue hover:scale-105 hover:shadow-xl">
                              <Ticket size={20} className="mr-2" /> Get Tickets
                         </a>
-                        <a href="#sponsors" className="w-full sm:w-auto group inline-flex h-14 items-center justify-center rounded-full border-2 border-slate-200 bg-white px-8 font-bold text-brand-navy transition-all duration-300 hover:border-brand-navy hover:bg-slate-50">
+                        <a href="https://docs.google.com/presentation/d/1fKJQFH8SAuNrz2soV20yp1funW0kap_DG78xqXQzRRQ/edit?usp=sharing" target="_blank" className="w-full sm:w-auto group inline-flex h-14 items-center justify-center rounded-full border-2 border-slate-200 bg-white px-8 font-bold text-brand-navy transition-all duration-300 hover:border-brand-navy hover:bg-slate-50">
                             <Handshake size={20} className="mr-2 text-brand-navy" /> Become a Partner
                         </a>
                     </motion.div>
