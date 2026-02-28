@@ -15,6 +15,7 @@ import Sponsors from './components/Sponsors';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import SponsorsA from './components/SponsorsA';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
       {/* <Vision /> */}
       <FinalCTA />
       <Footer />
+      <WhatsAppButton />
     </main>
   );
 }
