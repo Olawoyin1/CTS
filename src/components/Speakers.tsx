@@ -83,21 +83,21 @@ export default function Speakers() {
       title: "CEO Mainstack",
       image: "/Images/s2.jpeg",
     },
-    {
-      name: "Binta",
-      title: "Senior Manager, Career Advancement Centre Miva Open University",
-      image: "/Images/miva.jpeg",
-    },
-    {
-      name: "Ebuka Emmanuel Arinze",
-      title: "Chief Product Officer, Kredete",
-      image: "/Images/ebuka.jpg",
-    },
-    {
-      name: "Oyinkansola Badejo",
-      title: "Financial Literacy Advocate",
-      image: "/Images/oyin.jpg",
-    },
+    // {
+    //   name: "Binta",
+    //   title: "Senior Manager, Career Advancement Centre Miva Open University",
+    //   image: "/Images/miva.jpeg",
+    // },
+    // {
+    //   name: "Ebuka Emmanuel Arinze",
+    //   title: "Chief Product Officer, Kredete",
+    //   image: "/Images/ebuka.jpg",
+    // },
+    // {
+    //   name: "Oyinkansola Badejo",
+    //   title: "Financial Literacy Advocate",
+    //   image: "/Images/oyin.jpg",
+    // },
     {
       name: "Ruby Ihekweme",
       title: "Founder, Digitaley Drive",
