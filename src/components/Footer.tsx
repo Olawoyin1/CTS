@@ -1,4 +1,4 @@
-import { Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Twitter, Instagram, Mail, Phone, MapPin, Music2 as Tiktok } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -22,15 +22,15 @@ const Footer = () => {
                          <div className="mb-8">
                              <p className="font-bold text-lg mb-2">Follow us for updates.</p>
                              <p className="text-brand-blue font-semibold flex items-center gap-2">
-                                <span className="w-8 h-[2px] bg-brand-blue rounded-full"></span>
-                                Be part of history.
+                                 <span className="w-8 h-[2px] bg-brand-blue rounded-full"></span>
+                                 Be part of history.
                              </p>
                          </div>
-
+ 
                         <div className="flex gap-4">
                              {[
-                                { icon: Twitter, href: '#' },
-                                { icon: Linkedin, href: '#' },
+                                { icon: Twitter, href: 'https://x.com/Calitechsummit' },
+                                { icon: Tiktok, href: 'https://www.tiktok.com/@calabartechsummit' },
                                 { icon: Instagram, href: '#' }
                              ].map((social, idx) => (
                                 <a 
@@ -69,7 +69,7 @@ const Footer = () => {
                                 </div>
                                 <div>
                                     <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Email</p>
-                                    <a href="mailto:contact@thegenzhr.com" className="text-slate-700 hover:text-brand-blue transition-colors font-bold break-all">contact@thegenzhr.com</a>
+                                    <a href="mailto:contact@thegenzhr.com" className="text-slate-700 hover:text-brand-blue transition-colors font-bold break-all">calabartechsummit@thegenzhr.com</a>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 group">
