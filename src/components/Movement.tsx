@@ -11,7 +11,7 @@ const Movement = () => {
     ];
 
     return (
-        <section className="py-14 bg-white relative overflow-hidden border-b border-slate-100">
+        <section id="about" className="py-14 bg-white relative overflow-hidden border-b border-slate-100">
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="max-w-4xl mx-auto text-center mb-6">
                     <motion.h2 
