@@ -17,28 +17,28 @@ const Sponsors = () => {
             title: 'Brand Visibility & Movement', 
             desc: 'Gain high-impact visibility through omni-channel activations, aligning your brand with innovation and digital empowerment before, during, and after the summit.', 
             color: 'text-brand-navy', 
-            bg: 'bg-slate-50' 
+            bg: 'bg-[#e65121]',
         },
         { 
             icon: HiOutlineUserGroup, 
             title: 'Talent & Market Access', 
             desc: 'Access a direct pipeline of emerging talent and innovators, gaining data insights and recruitment opportunities to drive customer acquisition and market growth.', 
             color: 'text-brand-navy', 
-            bg: 'bg-slate-50' 
+            bg: 'bg-[#002d6b]', 
         },
         { 
             icon: Lightbulb, 
             title: 'Thought Leadership', 
             desc: 'Showcase your expertise through keynotes, panels, and workshops, positioning your organization as a top-tier leader in technology and economic development.', 
             color: 'text-brand-navy', 
-            bg: 'bg-slate-50' 
+            bg: 'bg-[#c47d15]',
         },
         { 
             icon: TrendingUp, 
             title: 'Policy & Social Impact', 
             desc: 'Align with government digital transformation priorities to deliver measurable social impact and strengthen strategic public-private partnerships.', 
             color: 'text-brand-navy', 
-            bg: 'bg-slate-50' 
+            bg: 'bg-[#632467]',
         },
     ];
 
@@ -82,14 +82,14 @@ const Sponsors = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: idx * 0.1 }}
-                                    className="flex items-start gap-5 bg-white p-6 rounded-2xl border border-slate-100 hover:border-blue-200 hover:shadow transition-all duration-300 group"
+                                    className={`${benefit.bg} flex items-start gap-5 p-6 rounded-2xl border border-slate-100 hover:border-blue-200 hover:shadow transition-all duration-300 group`}
                                 >
-                                    <div className={`w-12 h-12 rounded-xl ${benefit.bg} ${benefit.color} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
+                                    <div className={`w-12 h-12 rounded-xl  bg-white ${benefit.color} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
                                         <benefit.icon size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-brand-navy mb-1">{benefit.title}</h4>
-                                        <p className="text-slate-600 text-sm leading-relaxed">{benefit.desc}</p>
+                                        <h4 className="font-bold text-white mb-1">{benefit.title}</h4>
+                                        <p className="text-white text-sm leading-relaxed">{benefit.desc}</p>
                                     </div>
                                 </motion.div>
                             ))}
