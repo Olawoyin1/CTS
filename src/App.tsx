@@ -23,11 +23,11 @@ function App() {
       <Movement />
       <CTSStats />
       <WhyCalabar />
+      <Speakers />
       <Objectives />
       <KeyFeatures />
       <Tracks />
       <TargetAudience />
-      <Speakers />
       <Tickets />
       <Opportunities />
       <Sponsors />
