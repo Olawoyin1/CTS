@@ -123,11 +123,11 @@ export default function Speakers() {
     //   title: "People and Culture Lead, Cowrywise",
     //   image: "/Images/ea.jpeg",
     // },
-    {
-      name: "Chukwu Adaeze Victoria",
-      title: "Brand Designer & Strategist",
-      image: "/Images/cav.jpeg",
-    },
+    // {
+    //   name: "Chukwu Adaeze Victoria",
+    //   title: "Brand Designer & Strategist",
+    //   image: "/Images/cav.jpeg",
+    // },
     {
       name: "David Evbodaghe",
       title: "Software Dev, Meta",
@@ -143,16 +143,16 @@ export default function Speakers() {
       title: "GPS Associate, Bank of America",
       image: "/Images/il.jpeg",
     },
-    {
-      name: "Kemi Osayemi ",
-      title: "Senior Product Manager",
-      image: "/Images/ko.jpeg",
-    },
-    {
-      name: "Seun Lanlege ",
-      title: "Co-founder of Polytope Labs",
-      image: "/Images/sl.jpeg",
-    },
+    // {
+    //   name: "Kemi Osayemi ",
+    //   title: "Senior Product Manager",
+    //   image: "/Images/ko.jpeg",
+    // },
+    // {
+    //   name: "Seun Lanlege ",
+    //   title: "Co-founder of Polytope Labs",
+    //   image: "/Images/sl.jpeg",
+    // },
     {
       name: "Toyosi Aolarin ",
       title: "CEO, Yolat",
