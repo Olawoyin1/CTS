@@ -90,7 +90,44 @@ const Opportunities = () => {
                         ))}
                     </div>
                 </div>
+                {/* Integrated Vision Banner */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="mt-16 mx-4 p-1 rounded-[2.5rem] bg-gradient-to-r from-brand-navy via-brand-blue to-brand-navy group"
+                >
+                    <div className="bg-brand-navy rounded-[2.4rem] p-8 overflow-hidden relative">
+                        {/* Animated background lines */}
+                        <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
+                            <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white to-transparent" />
+                            <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white to-transparent" />
+                        </div>
+
+                        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left">
+                            <div className="max-w-2xl">
+                                <h3 className="text-2xl md:text-4xl font-black text-white mb-4 tracking-tight">
+                                    Building the <span className="text-brand-blue italic">Innovation Corridor</span> of Africa.
+                                </h3>
+                                <p className="text-slate-400 text-lg font-medium italic">
+                                    "Our mission is to democratize technology access and create a sustainable path for the next generation of African digital leaders."
+                                </p>
+                            </div>
+                            <div className="grid grid-cols-2 gap-4 w-full md:w-auto">
+                                <div className="p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md">
+                                    <p className="text-2xl font-black text-white">#CTS26</p>
+                                    <p className="text-[10px] text-brand-blue font-bold uppercase tracking-widest mt-1">Official Hash</p>
+                                </div>
+                                <div className="p-6 rounded-3xl bg-brand-blue border border-brand-blue text-white shadow-lg shadow-brand-blue/30">
+                                    <p className="text-2xl font-black">2026</p>
+                                    <p className="text-[10px] text-white/70 font-bold uppercase tracking-widest mt-1">The Year</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
             </div>
+            
         </section>
     );
 };
