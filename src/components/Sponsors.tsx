@@ -99,7 +99,7 @@ const Sponsors = () => {
                     {/* Sponsorship Opportunities */}
                     <div className="bg-white p-8 md:p-10 rounded-3xl border border-slate-200 shadow-sm">
                          <h3 className="text-2xl font-bold text-brand-navy mb-8">Sponsorship Opportunities</h3>
-                         <ul className="space-y-6 mb-10">
+                         <ul className="space-y-10 mb-10">
                             {opportunities.map((opp, idx) => (
                                 <motion.li 
                                     key={idx}
@@ -124,10 +124,7 @@ const Sponsors = () => {
                             ))}
                          </ul>
 
-                         <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100 text-center">
-                            <p className="text-brand-navy font-semibold mb-2">Interested in elevating your brand?</p>
-                            <p className="text-sm text-slate-500">Contact our partnership team for a custom package.</p>
-                         </div>
+                         
                     </div>
                 </div>
 
