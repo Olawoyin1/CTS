@@ -50,7 +50,7 @@ const WhyCalabar = () => {
                         
                         <div className="mt-10 pt-10 border-t border-slate-200">
                              <div className="flex items-baseline gap-2">
-                                <span className="text-5xl font-bold text-brand-blue tracking-tighter">5000+</span>
+                                <span className="text-5xl font-bold text-brand-blue tracking-tighter">3000+</span>
                                 <span className="text-lg font-bold text-slate-500 uppercase tracking-tight">Youth Ready to Work</span>
                              </div>
                         </div>
