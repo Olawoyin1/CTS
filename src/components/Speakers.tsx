@@ -103,26 +103,26 @@ export default function Speakers() {
       title: "Founder, Digitaley Drive",
       image: "/Images/ruby.jpg",
     },
-    {
-      name: "Emmanuel Faith",
-      title: "Founder, HR Clinic",
-      image: "/Images/ef.png",
-    },
-    {
-      name: "Maryam Yusuf",
-      title: "HR Consultant and HR Coach",
-      image: "/Images/my.jpeg",
-    },
-    {
-      name: "Nora Awolowo",
-      title: "Cinematographer, Photographer, Filmmaker, and Visual storyteller",
-      image: "/Images/na.jpeg",
-    },
-    {
-      name: "Ebenezer Akintomide",
-      title: "People and Culture Lead, Cowrywise",
-      image: "/Images/ea.jpeg",
-    },
+    // {
+    //   name: "Emmanuel Faith",
+    //   title: "Founder, HR Clinic",
+    //   image: "/Images/ef.png",
+    // },
+    // {
+    //   name: "Maryam Yusuf",
+    //   title: "HR Consultant and HR Coach",
+    //   image: "/Images/my.jpeg",
+    // },
+    // {
+    //   name: "Nora Awolowo",
+    //   title: "Cinematographer, Photographer, Filmmaker, and Visual storyteller",
+    //   image: "/Images/na.jpeg",
+    // },
+    // {
+    //   name: "Ebenezer Akintomide",
+    //   title: "People and Culture Lead, Cowrywise",
+    //   image: "/Images/ea.jpeg",
+    // },
     {
       name: "Chukwu Adaeze Victoria",
       title: "Brand Designer & Strategist",
