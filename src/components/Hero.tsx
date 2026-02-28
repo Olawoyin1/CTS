@@ -3,7 +3,7 @@ import { Ticket, Handshake } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <section className="relative min-h-screen flex items-center justify-center bg-white pt-32 pb-10 overflow-hidden text-center">
+        <section className="relative min-h-screen flex items-center justify-center bg-white pt-32 pb-0 overflow-hidden text-center">
              {/* Subtle Modern Grid Background */}
              <div className="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)] pointer-events-none" />
 

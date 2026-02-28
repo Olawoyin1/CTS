@@ -14,12 +14,14 @@ import Sponsors from './components/Sponsors';
 // import Vision from './components/Vision';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
+import SponsorsA from './components/SponsorsA';
 
 function App() {
   return (
     <main className="min-h-screen bg-white text-brand-navy antialiased">
       <Navbar />
       <Hero />
+      <SponsorsA />
       <Movement />
       <CTSStats />
       <Speakers />

@@ -7,18 +7,22 @@ const Objectives = () => {
         {
             icon: HiOutlineUserGroup,
             text: 'Introduce 5,000+ young people and residents in Calabar to tech-driven opportunities',
+            bg: 'bg-[#e65121]', 
         },
         {
             icon: Zap,
             text: 'Equip participants with practical, actionable skills for digital careers',
+            bg: 'bg-[#002d6b]',
         },
         {
             icon: BookOpen,
             text: 'Promote digital literacy and future-ready skills development',
+            bg: 'bg-[#c47d15]',
         },
         {
             icon: GraduationCap,
             text: 'Facilitate access to scholarships, mentorship, and learning opportunities',
+            bg: 'bg-[#632467]',
         },
     ];
 
@@ -66,12 +70,12 @@ const Objectives = () => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.4, delay: idx * 0.1 }}
-                                    className="group flex items-center gap-6 p-6 rounded-[2rem] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500"
+                                    className={` ${goal.bg} group flex items-center gap-6 p-6 rounded-[2rem] text-white border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500`}
                                 >
                                     <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-brand-navy shadow-sm group-hover:scale-110 group-hover:bg-brand-navy group-hover:text-white transition-all duration-300">
                                         <goal.icon size={20} />
                                     </div>
-                                    <p className="flex-1 text-slate-700 font-bold leading-tight group-hover:text-brand-navy transition-colors">
+                                    <p className="flex-1 font-bold leading-tight group-hover:text-brand-navy transition-colors">
                                         {goal.text}
                                     </p>
                                     <div className="opacity-0 group-hover:opacity-100 transition-opacity">
