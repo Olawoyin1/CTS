@@ -183,21 +183,21 @@ export default function Speakers() {
       title: "Storyteller/Content Marketing Lead, Grey",
       image: "/Images/ao.jpeg",
     },
-    {
-      name: "Goodness Armstrong ",
-      title: "Founder, Startuphr Africa",
-      image: "/Images/ga.jpeg",
-    },
-    {
-      name: "Achigonye Johnpaul  ",
-      title: "Founder & CEO, Sendcoins",
-      image: "/Images/aj.jpeg",
-    },
-    {
-      name: "Amaka Amaku   ",
-      title: "Entrepreneur and Content Creator",
-      image: "/Images/aa.jpg",
-    },
+    // {
+    //   name: "Goodness Armstrong ",
+    //   title: "Founder, Startuphr Africa",
+    //   image: "/Images/ga.jpeg",
+    // },
+    // {
+    //   name: "Achigonye Johnpaul  ",
+    //   title: "Founder & CEO, Sendcoins",
+    //   image: "/Images/aj.jpeg",
+    // },
+    // {
+    //   name: "Amaka Amaku   ",
+    //   title: "Entrepreneur and Content Creator",
+    //   image: "/Images/aa.jpg",
+    // },
   ];
 
   const settings = {
