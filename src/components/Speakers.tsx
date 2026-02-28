@@ -83,11 +83,36 @@ export default function Speakers() {
       title: "CEO Mainstack",
       image: "/Images/s2.jpeg",
     },
-    // {
-    //   name: "Binta",
-    //   title: "Senior Manager, Career Advancement Centre Miva Open University",
-    //   image: "/Images/miva.jpeg",
-    // },
+    {
+      name: "Iyin Aboyeji",
+      title: "",
+      image: "/Images/Iyin.png",
+    },
+    {
+      name: "Fisayo Fosudo",
+      title: "",
+      image: "/Images/fisayo.jpeg",
+    },
+    {
+      name: "Seye Bandele",
+      title: "",
+      image: "/Images/seye.jpeg",
+    },
+    {
+      name: "Joshua Chibueze",
+      title: "",
+      image: "/Images/joshua.jpeg",
+    },
+    {
+      name: "Taoma",
+      title: "",
+      image: "/Images/taoma.jpeg",
+    },
+    {
+      name: "Jay on Air",
+      title: "",
+      image: "/Images/jay.png",
+    },
     // {
     //   name: "Ebuka Emmanuel Arinze",
     //   title: "Chief Product Officer, Kredete",
