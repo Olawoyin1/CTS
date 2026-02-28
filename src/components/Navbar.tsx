@@ -37,7 +37,9 @@ const Navbar = () => {
                 {/* Logo Section */}
                 <a href="#" className="flex items-center gap-2 group relative z-50">
                     <div className="flex flex-col leading-tight">
-                        <span className="text-xl font-bold tracking-tight text-brand-navy group-hover:text-brand-blue transition-colors">
+                        <span className={`text-xl font-bold tracking-tight transition-colors ${
+                            scrolled ? 'text-brand-navy' : 'text-white'
+                        } group-hover:text-brand-blue`}>
                             CTS 2026
                         </span>
                     </div>
@@ -49,7 +51,9 @@ const Navbar = () => {
                         <a 
                             key={link.name} 
                             href={link.href} 
-                            className="text-sm font-semibold text-slate-600 hover:text-brand-blue transition-colors"
+                            className={`text-sm font-semibold transition-colors ${
+                                scrolled ? 'text-slate-600' : 'text-white/80'
+                            } hover:text-brand-blue`}
                         >
                             {link.name}
                         </a>
