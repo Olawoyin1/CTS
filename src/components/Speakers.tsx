@@ -158,26 +158,26 @@ export default function Speakers() {
       title: "CEO, Yolat",
       image: "/Images/yolat.jpeg",
     },
-    {
-      name: "Salami Abdullateef",
-      title: "HR Professional",
-      image: "/Images/salam.jpeg",
-    },
-    {
-      name: " O.J Tobiloba ",
-      title: "Financial Literacy Advocate, Investment Analyst & Financial Content Strategist",
-      image: "/Images/oj.jpeg",
-    },
-    {
-      name: " Hansel Praise ",
-      title: "Contract Manager at a leading international energy conglomerate",
-      image: "/Images/hp.jpeg",
-    },
-    {
-      name: "Oluchukwu Chidiaka",
-      title: "Personal Finance Coach",
-      image: "/Images/ns.jpeg",
-    },
+    // {
+    //   name: "Salami Abdullateef",
+    //   title: "HR Professional",
+    //   image: "/Images/salam.jpeg",
+    // },
+    // {
+    //   name: " O.J Tobiloba ",
+    //   title: "Financial Literacy Advocate, Investment Analyst & Financial Content Strategist",
+    //   image: "/Images/oj.jpeg",
+    // },
+    // {
+    //   name: " Hansel Praise ",
+    //   title: "Contract Manager at a leading international energy conglomerate",
+    //   image: "/Images/hp.jpeg",
+    // },
+    // {
+    //   name: "Oluchukwu Chidiaka",
+    //   title: "Personal Finance Coach",
+    //   image: "/Images/ns.jpeg",
+    // },
     {
       name: "Ama Udofa",
       title: "Storyteller/Content Marketing Lead, Grey",
