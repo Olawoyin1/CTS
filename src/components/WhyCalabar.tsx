@@ -62,7 +62,7 @@ const WhyCalabar = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="bg-brand-navy p-8 md:p-12 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden"
+                        className="bg-[#0FA958] p-8 md:p-12 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden"
                     >
                         {/* Decorative background blob */}
                          <div className="absolute top-0 right-0 w-64 h-64 bg-brand-blue/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
@@ -90,7 +90,7 @@ const WhyCalabar = () => {
                                         </div>
                                         <div>
                                             <h4 className="font-bold text-white mb-1 text-lg">{item.title}</h4>
-                                            <p className="text-slate-400 text-sm leading-relaxed font-medium">{item.desc}</p>
+                                            <p className="text-white text-sm leading-relaxed font-medium">{item.desc}</p>
                                         </div>
                                         <ArrowRight size={20} className="ml-auto hidden md:flex text-white/20 group-hover:text-white/50 group-hover:translate-x-1 transition-all" />
                                     </div>

@@ -137,9 +137,9 @@ const Sponsors = () => {
                     viewport={{ once: true }}
                     className="relative overflow-hidden rounded-3xl bg-brand-navy text-white text-center p-12 md:p-16"
                 >
-                    <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_white_1px,_transparent_1px)] bg-[size:20px_20px]"></div>
+                    <div className="absolute top-0 left-0 w-full h-full pointer-events-none bg-[#0FA958]"></div>
                     <h3 className="text-3xl md:text-4xl font-bold mb-6 relative z-10">Ready to Make an Impact?</h3>
-                    <p className="text-slate-300 mb-10 max-w-2xl mx-auto text-xl font-light relative z-10">
+                    <p className="text-white mb-10 max-w-3xl mx-auto text-xl font-light relative z-10">
                         Download our sponsorship brochure or schedule a call to discuss partnership opportunities.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-5 justify-center relative z-10">
