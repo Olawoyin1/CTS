@@ -98,11 +98,11 @@ export default function Speakers() {
     //   title: "Financial Literacy Advocate",
     //   image: "/Images/oyin.jpg",
     // },
-    {
-      name: "Ruby Ihekweme",
-      title: "Founder, Digitaley Drive",
-      image: "/Images/ruby.jpg",
-    },
+    // {
+    //   name: "Ruby Ihekweme",
+    //   title: "Founder, Digitaley Drive",
+    //   image: "/Images/ruby.jpg",
+    // },
     // {
     //   name: "Emmanuel Faith",
     //   title: "Founder, HR Clinic",
