@@ -7,7 +7,12 @@ import { Mic2, ChevronLeft, ChevronRight } from "lucide-react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function PrevArrow(props: any) {
+interface ArrowProps {
+  style?: React.CSSProperties;
+  onClick?: () => void;
+}
+
+function PrevArrow(props: ArrowProps) {
   const { style, onClick } = props;
   return (
     <div
@@ -20,7 +25,7 @@ function PrevArrow(props: any) {
   );
 }
 
-function NextArrow(props: any) {
+function NextArrow(props: ArrowProps) {
   const { style, onClick } = props;
   return (
     <div
@@ -56,142 +61,142 @@ export default function Speakers() {
     {
       name: "Fola Olatunji-David",
       title: "Founding Partner, Kickoff Africa",
-      image: "../../Images/fola.jpg",
+      image: "/Images/fola.jpg",
     },
     {
       name: "Adeife Adeoye",
       title: "Digital Creator",
-      image: "../../Images/s1.jpeg",
+      image: "/Images/s1.jpeg",
     },
     {
       name: "Bayomi",
       title: "Tech Creator",
-      image: "../../Images/bayomi.jpg",
+      image: "/Images/bayomi.jpg",
     },
     {
       name: "Abbietayo",
       title: "Content Creator, Storyteller, Writer",
-      image: "../../Images/new.jpg",
+      image: "/Images/new.jpg",
     },
     {
       name: "Ayobami Oyaleke",
       title: "CEO Mainstack",
-      image: "../../Images/s2.jpeg",
+      image: "/Images/s2.jpeg",
     },
     {
       name: "Binta",
       title: "Senior Manager, Career Advancement Centre Miva Open University",
-      image: "../../Images/miva.jpeg",
+      image: "/Images/miva.jpeg",
     },
     {
       name: "Ebuka Emmanuel Arinze",
       title: "Chief Product Officer, Kredete",
-      image: "../../Images/ebuka.jpg",
+      image: "/Images/ebuka.jpg",
     },
     {
       name: "Oyinkansola Badejo",
       title: "Financial Literacy Advocate",
-      image: "../../Images/oyin.jpg",
+      image: "/Images/oyin.jpg",
     },
     {
       name: "Ruby Ihekweme",
       title: "Founder, Digitaley Drive",
-      image: "../../Images/ruby.jpg",
+      image: "/Images/ruby.jpg",
     },
     {
       name: "Emmanuel Faith",
       title: "Founder, HR Clinic",
-      image: "../../Images/ef.png",
+      image: "/Images/ef.png",
     },
     {
       name: "Maryam Yusuf",
       title: "HR Consultant and HR Coach",
-      image: "../../Images/my.jpeg",
+      image: "/Images/my.jpeg",
     },
     {
       name: "Nora Awolowo",
       title: "Cinematographer, Photographer, Filmmaker, and Visual storyteller",
-      image: "../../Images/na.jpeg",
+      image: "/Images/na.jpeg",
     },
     {
       name: "Ebenezer Akintomide",
       title: "People and Culture Lead, Cowrywise",
-      image: "../../Images/ea.jpeg",
+      image: "/Images/ea.jpeg",
     },
     {
       name: "Chukwu Adaeze Victoria",
       title: "Brand Designer & Strategist",
-      image: "../../Images/cav.jpeg",
+      image: "/Images/cav.jpeg",
     },
     {
       name: "David Evbodaghe",
       title: "Software Dev, Meta",
-      image: "../../Images/david.jpeg",
+      image: "/Images/david.jpeg",
     },
     {
       name: "Natasha Nissar",
       title: "Chief of Staff, BMONI",
-      image: "../../Images/nn.jpeg",
+      image: "/Images/nn.jpeg",
     },
     {
       name: "Ifemide Livingfont ",
       title: "GPS Associate, Bank of America",
-      image: "../../Images/il.jpeg",
+      image: "/Images/il.jpeg",
     },
     {
       name: "Kemi Osayemi ",
       title: "Senior Product Manager",
-      image: "../../Images/ko.jpeg",
+      image: "/Images/ko.jpeg",
     },
     {
       name: "Seun Lanlege ",
       title: "Co-founder of Polytope Labs",
-      image: "../../Images/sl.jpeg",
+      image: "/Images/sl.jpeg",
     },
     {
       name: "Toyosi Aolarin ",
       title: "CEO, Yolat",
-      image: "../../Images/yolat.jpeg",
+      image: "/Images/yolat.jpeg",
     },
     {
       name: "Salami Abdullateef",
       title: "HR Professional",
-      image: "../../Images/salam.jpeg",
+      image: "/Images/salam.jpeg",
     },
     {
       name: " O.J Tobiloba ",
       title: "Financial Literacy Advocate, Investment Analyst & Financial Content Strategist",
-      image: "../../Images/oj.jpeg",
+      image: "/Images/oj.jpeg",
     },
     {
       name: " Hansel Praise ",
       title: "Contract Manager at a leading international energy conglomerate",
-      image: "../../Images/hp.jpeg",
+      image: "/Images/hp.jpeg",
     },
     {
       name: "Oluchukwu Chidiaka",
       title: "Personal Finance Coach",
-      image: "../../Images/ns.jpeg",
+      image: "/Images/ns.jpeg",
     },
     {
       name: "Ama Udofa",
       title: "Storyteller/Content Marketing Lead, Grey",
-      image: "../../Images/ao.jpeg",
+      image: "/Images/ao.jpeg",
     },
     {
       name: "Goodness Armstrong ",
       title: "Founder, Startuphr Africa",
-      image: "../../Images/ga.jpeg",
+      image: "/Images/ga.jpeg",
     },
     {
       name: "Achigonye Johnpaul  ",
       title: "Founder & CEO, Sendcoins",
-      image: "../../Images/aj.jpeg",
+      image: "/Images/aj.jpeg",
     },
     {
       name: "Amaka Amaku   ",
       title: "Entrepreneur and Content Creator",
-      image: "../../Images/aa.jpg",
+      image: "/Images/aa.jpg",
     },
   ];
 
