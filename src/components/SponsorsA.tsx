@@ -90,12 +90,12 @@ const voices: Voice[] = [
 //     logoSrc: "../../Images/drive.png",
 //     website: "/",
 //   },
-  {
-    id: "mandc",
-    name: "Mandc",
-    logoSrc: "../../Images/wb.png",
-    website: "https://book.withsplice.com/whitneywhytbeauty",
-  },
+//   {
+//     id: "mandc",
+//     name: "Mandc",
+//     logoSrc: "../../Images/wb.png",
+//     website: "https://book.withsplice.com/whitneywhytbeauty",
+//   },
 //   {
 //     id: "mandc",
 //     name: "Mandc",
