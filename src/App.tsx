@@ -4,7 +4,7 @@ import Movement from './components/Movement';
 import CTSStats from './components/CTSStats';
 import WhyCalabar from './components/WhyCalabar';
 import Objectives from './components/Objectives';
-import KeyFeatures from './components/KeyFeatures';
+// import KeyFeatures from './components/KeyFeatures';
 import Tracks from './components/Tracks';
 import TargetAudience from './components/TargetAudience';
 import Speakers from './components/Speakers';
