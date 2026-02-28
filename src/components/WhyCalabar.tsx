@@ -62,7 +62,7 @@ const WhyCalabar = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="bg-[#0FA958] p-8 md:p-12 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden"
+                        className="bg-green-900 p-8 md:p-12 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden"
                     >
                         {/* Decorative background blob */}
                          <div className="absolute top-0 right-0 w-64 h-64 bg-brand-blue/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
