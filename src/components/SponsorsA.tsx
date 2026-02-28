@@ -11,12 +11,12 @@ interface Voice {
 }
 
 const voices: Voice[] = [
-  {
-    id: "mtn",
-    name: "Mtn",
-    logoSrc: "../../Images/sponsor1.png",
-    website: "https://tusvintage.com/",
-  },
+//   {
+//     id: "mtn",
+//     name: "Mtn",
+//     logoSrc: "../../Images/sponsor1.png",
+//     website: "https://tusvintage.com/",
+//   },
   // { id: "spotify", name: "Spotify", logoSrc: "../../Images/compass.png", website: "Spotify Logo" },
   {
     id: "piggyvest",
@@ -42,18 +42,18 @@ const voices: Voice[] = [
     logoSrc: "../../Images/pt2.jpeg",
     website: "/",
   },
-  {
-    id: "piggyvest",
-    name: "Piggyvest",
-    logoSrc: "../../Images/pt3.jpeg",
-    website: "https://www.remoteworkher.com/",
-  },
-  {
-    id: "paid",
-    name: "Paid",
-    logoSrc: "../../Images/compas.png",
-    website: "https://agt.compasai.com/",
-  },
+//   {
+//     id: "piggyvest",
+//     name: "Piggyvest",
+//     logoSrc: "../../Images/pt3.jpeg",
+//     website: "https://www.remoteworkher.com/",
+//   },
+//   {
+//     id: "paid",
+//     name: "Paid",
+//     logoSrc: "../../Images/compas.png",
+//     website: "https://agt.compasai.com/",
+//   },
   {
     id: "krede",
     name: "Krede",
@@ -78,36 +78,36 @@ const voices: Voice[] = [
     logoSrc: "../../Images/gs.jpeg",
     website: "/",
   },
-  {
-    id: "mandc",
-    name: "Mandc",
-    logoSrc: "../../Images/ruxe.jpeg",
-    website: "/",
-  },
-  {
-    id: "mandc",
-    name: "Mandc",
-    logoSrc: "../../Images/drive.png",
-    website: "/",
-  },
+//   {
+//     id: "mandc",
+//     name: "Mandc",
+//     logoSrc: "../../Images/ruxe.jpeg",
+//     website: "/",
+//   },
+//   {
+//     id: "mandc",
+//     name: "Mandc",
+//     logoSrc: "../../Images/drive.png",
+//     website: "/",
+//   },
   {
     id: "mandc",
     name: "Mandc",
     logoSrc: "../../Images/wb.png",
     website: "https://book.withsplice.com/whitneywhytbeauty",
   },
-  {
-    id: "mandc",
-    name: "Mandc",
-    logoSrc: "../../Images/bmon.jpeg",
-    website: "https://book.withsplice.com/whitneywhytbeauty",
-  },
-  {
-    id: "mandc",
-    name: "Mandc",
-    logoSrc: "../../Images/sc.png",
-    website: "/",
-  },
+//   {
+//     id: "mandc",
+//     name: "Mandc",
+//     logoSrc: "../../Images/bmon.jpeg",
+//     website: "https://book.withsplice.com/whitneywhytbeauty",
+//   },
+//   {
+//     id: "mandc",
+//     name: "Mandc",
+//     logoSrc: "../../Images/sc.png",
+//     website: "/",
+//   },
   {
     id: "mandc",
     name: "Mandc",
