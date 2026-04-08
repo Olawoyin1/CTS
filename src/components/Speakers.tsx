@@ -88,11 +88,11 @@ export default function Speakers() {
     //   title: "",
     //   image: "/Images/Iyin.png",
     // },
-    // {
-    //   name: "Fisayo Fosudo",
-    //   title: "",
-    //   image: "/Images/fisayo.jpeg",
-    // },
+    {
+      name: "Fisayo Fosudo",
+      title: "",
+      image: "/Images/fisayo.jpeg",
+    },
     // {
     //   name: "Seye Bandele",
     //   title: "",
@@ -178,51 +178,7 @@ export default function Speakers() {
     //   title: "Co-founder of Polytope Labs",
     //   image: "/Images/sl.jpeg",
     // },
-    {
-      // name: "Toyosi Aolarin ",
-      // title: "CEO, Yolat",
-      // image: "/Images/yolat.jpeg",
-    },
-    // {
-    //   name: "Salami Abdullateef",
-    //   title: "HR Professional",
-    //   image: "/Images/salam.jpeg",
-    // },
-    // {
-    //   name: " O.J Tobiloba ",
-    //   title: "Financial Literacy Advocate, Investment Analyst & Financial Content Strategist",
-    //   image: "/Images/oj.jpeg",
-    // },
-    // {
-    //   name: " Hansel Praise ",
-    //   title: "Contract Manager at a leading international energy conglomerate",
-    //   image: "/Images/hp.jpeg",
-    // },
-    // {
-    //   name: "Oluchukwu Chidiaka",
-    //   title: "Personal Finance Coach",
-    //   image: "/Images/ns.jpeg",
-    // },
-    {
-      // name: "Ama Udofa",
-      // title: "Storyteller/Content Marketing Lead, Grey",
-      // image: "/Images/ao.jpeg",
-    },
-    // {
-    //   name: "Goodness Armstrong ",
-    //   title: "Founder, Startuphr Africa",
-    //   image: "/Images/ga.jpeg",
-    // },
-    // {
-    //   name: "Achigonye Johnpaul  ",
-    //   title: "Founder & CEO, Sendcoins",
-    //   image: "/Images/aj.jpeg",
-    // },
-    // {
-    //   name: "Amaka Amaku   ",
-    //   title: "Entrepreneur and Content Creator",
-    //   image: "/Images/aa.jpg",
-    // },
+
   ];
 
   const settings = {
