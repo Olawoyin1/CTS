@@ -58,11 +58,11 @@ export default function Speakers() {
   }, []);
 
   const speakers = [
-    {
-      name: "Fola Olatunji-David",
-      title: "Founding Partner, Kickoff Africa",
-      image: "/Images/fola.jpg",
-    },
+    // {
+    //   name: "Fola Olatunji-David",
+    //   title: "Founding Partner, Kickoff Africa",
+    //   image: "/Images/fola.jpg",
+    // },
     {
       name: "Adeife Adeoye",
       title: "Digital Creator",
@@ -73,46 +73,46 @@ export default function Speakers() {
       title: "Tech Creator",
       image: "/Images/bayomi.jpg",
     },
-    {
-      name: "Abbietayo",
-      title: "Content Creator, Storyteller, Writer",
-      image: "/Images/new.jpg",
-    },
-    {
-      name: "Ayobami Oyaleke",
-      title: "CEO Mainstack",
-      image: "/Images/s2.jpeg",
-    },
-    {
-      name: "Iyin Aboyeji",
-      title: "",
-      image: "/Images/Iyin.png",
-    },
-    {
-      name: "Fisayo Fosudo",
-      title: "",
-      image: "/Images/fisayo.jpeg",
-    },
-    {
-      name: "Seye Bandele",
-      title: "",
-      image: "/Images/seye.jpeg",
-    },
-    {
-      name: "Joshua Chibueze",
-      title: "",
-      image: "/Images/joshua.jpeg",
-    },
+    // {
+    //   name: "Abbietayo",
+    //   title: "Content Creator, Storyteller, Writer",
+    //   image: "/Images/new.jpg",
+    // },
+    // {
+    //   name: "Ayobami Oyaleke",
+    //   title: "CEO Mainstack",
+    //   image: "/Images/s2.jpeg",
+    // },
+    // {
+    //   name: "Iyin Aboyeji",
+    //   title: "",
+    //   image: "/Images/Iyin.png",
+    // },
+    // {
+    //   name: "Fisayo Fosudo",
+    //   title: "",
+    //   image: "/Images/fisayo.jpeg",
+    // },
+    // {
+    //   name: "Seye Bandele",
+    //   title: "",
+    //   image: "/Images/seye.jpeg",
+    // },
+    // {
+    //   name: "Joshua Chibueze",
+    //   title: "",
+    //   image: "/Images/joshua.jpeg",
+    // },
     {
       name: "Taoma",
       title: "",
       image: "/Images/taoma.jpeg",
     },
-    {
-      name: "Jay on Air",
-      title: "",
-      image: "/Images/jay.png",
-    },
+    // {
+    //   name: "Jay on Air",
+    //   title: "",
+    //   image: "/Images/jay.png",
+    // },
     // {
     //   name: "Ebuka Emmanuel Arinze",
     //   title: "Chief Product Officer, Kredete",
@@ -153,21 +153,21 @@ export default function Speakers() {
     //   title: "Brand Designer & Strategist",
     //   image: "/Images/cav.jpeg",
     // },
-    {
-      name: "David Evbodaghe",
-      title: "Software Dev, Meta",
-      image: "/Images/david.jpeg",
-    },
-    {
-      name: "Natasha Nissar",
-      title: "Chief of Staff, BMONI",
-      image: "/Images/nn.jpeg",
-    },
-    {
-      name: "Ifemide Livingfont ",
-      title: "GPS Associate, Bank of America",
-      image: "/Images/il.jpeg",
-    },
+    // {
+    //   name: "David Evbodaghe",
+    //   title: "Software Dev, Meta",
+    //   image: "/Images/david.jpeg",
+    // },
+    // {
+    //   name: "Natasha Nissar",
+    //   title: "Chief of Staff, BMONI",
+    //   image: "/Images/nn.jpeg",
+    // },
+    // {
+    //   name: "Ifemide Livingfont ",
+    //   title: "GPS Associate, Bank of America",
+    //   image: "/Images/il.jpeg",
+    // },
     // {
     //   name: "Kemi Osayemi ",
     //   title: "Senior Product Manager",
@@ -179,9 +179,9 @@ export default function Speakers() {
     //   image: "/Images/sl.jpeg",
     // },
     {
-      name: "Toyosi Aolarin ",
-      title: "CEO, Yolat",
-      image: "/Images/yolat.jpeg",
+      // name: "Toyosi Aolarin ",
+      // title: "CEO, Yolat",
+      // image: "/Images/yolat.jpeg",
     },
     // {
     //   name: "Salami Abdullateef",
@@ -204,9 +204,9 @@ export default function Speakers() {
     //   image: "/Images/ns.jpeg",
     // },
     {
-      name: "Ama Udofa",
-      title: "Storyteller/Content Marketing Lead, Grey",
-      image: "/Images/ao.jpeg",
+      // name: "Ama Udofa",
+      // title: "Storyteller/Content Marketing Lead, Grey",
+      // image: "/Images/ao.jpeg",
     },
     // {
     //   name: "Goodness Armstrong ",

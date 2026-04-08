@@ -28,7 +28,7 @@ const Hero = () => {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-blue"></span>
                         </span>
-                        <span className="text-sm font-semibold text-white/80 tracking-wide uppercase">JUNE 26th, 2026 • Calabar, Nigeria</span>
+                        <span className="text-sm font-semibold text-white/80 tracking-wide uppercase">JUNE 27th, 2026 • Calabar, Nigeria</span>
                     </motion.div>
     
                     {/* Main Title */}
