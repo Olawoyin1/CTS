@@ -142,3 +142,41 @@
     @apply transition-all duration-300 hover:-translate-y-1;
   }
 }
+
+/* ── Smooth marquee animations ── */
+@keyframes marquee {
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-33.333%, 0, 0); }
+}
+
+@keyframes marquee-sponsors {
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-33.333%, 0, 0); }
+}
+
+.animate-marquee {
+  animation: marquee 18s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-sponsors {
+  animation: marquee-sponsors 25s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.animate-marquee-sponsors:hover {
+  animation-play-state: paused;
+}
+
+/* ── GPU compositing for all framer-motion animated elements ── */
+[data-framer-component-type],
+.motion-div {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
